@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidel Niyidukunda - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 2cm;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .name { 
+            font-size: 2.5rem; 
+            font-weight: bold; 
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .job {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-header {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .job-details {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .responsibilities {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .responsibilities li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .cert-item {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cert-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        @media print {
+            body { padding: 1cm; }
+            .project-links { display: none; }
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            .name { font-size: 2rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="name">Fidel Niyidukunda</div>
+        <div class="contact-info">
+            +27 67 718 8232 | finiyid@gmail.com<br>
+            <a href="www.delitweb.co.za/niyidukunda" target="_blank">www.delitweb.co.za/niyidukunda</a> | 
+            <a href="https://github.com/Niyidukunda" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com/in/fidel-niyidukunda" target="_blank">LinkedIn</a><br>
+            Unit 17 Mogale Gardens, Muldersdrift, Johannesburg, Gauteng. 1747
+        </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>Multidisciplinary IT professional with 3+ years hands-on experience in web development, LMS administration, and educational technology. Building reliable web applications while teaching coding to students, providing unique user experience insights. Strong background in WordPress development, SEO optimization, and network infrastructure.</p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        <!-- Experience items will be populated by script -->
+        
+        <div class="job">
+            <div class="job-header">IT Administrator & Course Facilitator – BSG and Technologies</div>
+            <div class="job-details">Feb 2025 – Present</div>
+            <ul class="responsibilities">
+                <li>Created and maintained SEO-friendly websites and LMS portals using WordPress, including custom post types and responsive templates</li><li>Developed site components using HTML, CSS, PHP, and JavaScript ensuring responsive and mobile-first web designs</li><li>Conducted performance analysis using SEO tools and provided reports on digital engagement and site visibility</li><li>Coordinated updates to Tutor LMS plugins, backups, and content consistency across multiple platforms</li><li>Collaborated with educational teams to align content strategy and user experience with best web practices</li><li>Supported cloud-based DNS, email, and web services through Linux server environments, cPanel, and Google Workspace</li>
+            </ul>
+        </div>
+    
+        <div class="job">
+            <div class="job-header">Founder & Freelance IT Support Technician – del IT & Web</div>
+            <div class="job-details">April 2022 – Feb 2025</div>
+            <ul class="responsibilities">
+                <li>Designed and hosted client websites using WordPress, Elementor, and integrated SEO tools</li><li>Customized themes, installed plugins, and configured hosting environments (Hostinger, GoDaddy, Webway)</li><li>Provided WordPress training and managed content for business clients, improving web visibility and indexing</li><li>Created promotional web pages and mailers for clients' digital campaigns</li><li>Used GIMP and Photoshop for image editing and content creation</li><li>Managed Linux tasks (permission management, FTP setup, CLI usage) for site deployment</li>
+            </ul>
+        </div>
+    
+        <div class="job">
+            <div class="job-header">Private Tutor – Self-Employed</div>
+            <div class="job-details">February 2016 – March 2022</div>
+            <ul class="responsibilities">
+                <li>Provided academic support in Mathematics and Sciences to high school and college students</li><li>Built strong client relationships and improved learning outcomes through personalized strategies</li><li>Developed learner-centred schedules and progress tracking systems</li>
+            </ul>
+        </div>
+    
+        <div class="job">
+            <div class="job-header">Educator & ICT Lab Assistant – Kwa-Giba High School</div>
+            <div class="job-details">April 2009 – December 2012</div>
+            <ul class="responsibilities">
+                <li>Supported ICT Department and coordinated lab activities</li><li>Installed and maintained lab hardware and software</li><li>Ensured secure systems through antivirus deployment, firewall setup, and user access controls</li><li>Delivered full-time classroom teaching in Mathematics and Sciences</li>
+            </ul>
+        </div>
+    
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="section">
+        <div class="section-title">Featured Projects</div>
+        <!-- Projects will be populated by script -->
+        
+        <div class="project-card">
+            <div class="project-title">Purpose & Perspective Blog</div>
+            <p>Full-stack blog application with intelligent fallback systems and comprehensive security features</p>
+            <div style="margin: 0.5rem 0;">
+                <strong>Technologies:</strong> Node.js, Express, MongoDB, EJS, Security Implementation
+            </div>
+            
+                <div style="margin: 0.5rem 0;">
+                    <strong>Highlights:</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>Dual-storage architecture ensuring 100% uptime</li><li>XSS protection and rate limiting implementation</li><li>Auto-retry connection logic with health monitoring</li>
+                    </ul>
+                </div>
+            
+            <div class="project-links">
+                <a href="https://github.com/Niyidukunda/express-blog-app" target="_blank">View Code</a>
+                
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <div class="project-title">Floral Kingdom Tours</div>
+            <p>Headless CMS tourism platform with React frontend and WordPress backend</p>
+            <div style="margin: 0.5rem 0;">
+                <strong>Technologies:</strong> React, WordPress, Tailwind CSS, Vercel, REST API
+            </div>
+            
+                <div style="margin: 0.5rem 0;">
+                    <strong>Highlights:</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>Environment-aware API integration with fallback handling</li><li>Responsive carousel with mobile optimization</li><li>Complete booking system with form validation</li>
+                    </ul>
+                </div>
+            
+            <div class="project-links">
+                <a href="https://github.com/Niyidukunda/floral-kingdom-tours" target="_blank">View Code</a>
+                <a href="https://floral-kingdom-tours.vercel.app" target="_blank">Live Demo</a>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <div class="project-title">Learning Management Systems</div>
+            <p>Educational platforms with course management and student progress tracking</p>
+            <div style="margin: 0.5rem 0;">
+                <strong>Technologies:</strong> WordPress, Tutor LMS, Educational Technology
+            </div>
+            
+                <div style="margin: 0.5rem 0;">
+                    <strong>Highlights:</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>Supporting 100+ students in remote and underserved backgrounds</li><li>Real-time user feedback integration</li><li>Offline/online sync capabilities</li>
+                    </ul>
+                </div>
+            
+            <div class="project-links">
+                
+                
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <div class="project-title">Kubernetes Learning Journey</div>
+            <p>Hands-on learning journal documenting containerization and orchestration exploration</p>
+            <div style="margin: 0.5rem 0;">
+                <strong>Technologies:</strong> Kubernetes, Docker, Linux, DevOps
+            </div>
+            
+                <div style="margin: 0.5rem 0;">
+                    <strong>Highlights:</strong>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>Complete setup guides for Minikube and kubectl</li><li>Practical deployment experiments and troubleshooting</li><li>ConfigMaps and Secrets implementation documentation</li>
+                    </ul>
+                </div>
+            
+            <div class="project-links">
+                <a href="https://github.com/Niyidukunda/kubernetes-learning-journal" target="_blank">View Code</a>
+                
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming & Web Development</h4>
+                <p><strong>Frontend:</strong> HTML, CSS, JavaScript, React, EJS, Tailwind CSS</p>
+                <p><strong>Backend:</strong> Node.js, Express.js, PHP</p>
+                <p><strong>Databases:</strong> MongoDB Atlas, SQL, MySQL</p>
+            </div>
+            <div class="skill-category">
+                <h4>Infrastructure & Cloud</h4>
+                <p><strong>Operating Systems:</strong> Windows, macOS, Ubuntu Linux</p>
+                <p><strong>Cloud:</strong> Azure, GCP, DNS, VMs, IAM</p>
+                <p><strong>Networking:</strong> TCP/IP, OSPF, RSTP, VPN, Firewalls</p>
+            </div>
+            <div class="skill-category">
+                <h4>CMS & Digital Tools</h4>
+                <p><strong>CMS:</strong> WordPress, Headless CMS, Custom Post Types</p>
+                <p><strong>SEO:</strong> Yoast, Rank Math, Google Analytics</p>
+                <p><strong>Design:</strong> Photoshop, GIMP, Elementor</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+        <div class="section-title">Education & Certifications</div>
+        <div class="cert-item">
+            <span class="cert-name">CompTIA Certifications (2021–2024):</span> A+, Network+, Security+, Cisco CCNA
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Web Technologies:</span> WordPress Development, Kubernetes LFS250, KCNA
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Durban University of Technology (2012–2015):</span> S4 Electronic Engineering (Pending In-service Training)
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Command Secondary School (2004):</span> National Certificate (Matric)
+        </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <p><strong>English:</strong> Fluent | <strong>isiZulu:</strong> Conversational | <strong>French:</strong> Conversational</p>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 2rem; color: #7f8c8d; font-size: 0.9rem;">
+        Generated from GitHub data | Last updated: October 2025
+    </div>
+</body>
+</html>

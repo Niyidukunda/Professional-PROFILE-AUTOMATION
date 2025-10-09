@@ -1,0 +1,43 @@
+{
+  "name": "Fidel Niyidukunda",
+  "title": "Full-Stack Developer & Network Support Technician",
+  "location": "Johannesburg & Durban, South Africa",
+  "summary": "Multidisciplinary IT professional with 3+ years hands-on experience in web development, LMS administration, and educational technology. Building reliable web applications while teaching coding to students, providing unique user experience insights. Strong background in WordPress development, SEO optimization, and network infrastructure.",
+  "key_skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node.js",
+    "Express.js"
+  ],
+  "recent_projects": [
+    {
+      "name": "Purpose & Perspective Blog",
+      "description": "Full-stack blog application with intelligent fallback systems and comprehensive security features",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Floral Kingdom Tours",
+      "description": "Headless CMS tourism platform with React frontend and WordPress backend",
+      "technologies": [
+        "React",
+        "WordPress",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "name": "Learning Management Systems",
+      "description": "Educational platforms with course management and student progress tracking",
+      "technologies": [
+        "WordPress",
+        "Tutor LMS",
+        "Educational Technology"
+      ]
+    }
+  ],
+  "generated_at": "2025-10-09T11:25:07.656Z"
+}

@@ -9,10 +9,10 @@ package-lock.json
 # VS Code settings
 .vscode/
 
-# Generated files
-generated/*.html
-generated/*.txt
-generated/*.json
+# Generated files (allow directory, ignore contents initially)
+# generated/*.html
+# generated/*.txt  
+# generated/*.json
 
 # OS generated files
 .DS_Store
