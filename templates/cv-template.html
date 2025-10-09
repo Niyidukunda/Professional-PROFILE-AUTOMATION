@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}} - CV</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 2cm;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .name { 
+            font-size: 2.5rem; 
+            font-weight: bold; 
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .job {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-header {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .job-details {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .responsibilities {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .responsibilities li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        .cert-item {
+            margin-bottom: 0.5rem;
+        }
+        
+        .cert-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        @media print {
+            body { padding: 1cm; }
+            .project-links { display: none; }
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            .name { font-size: 2rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="name">{{name}}</div>
+        <div class="contact-info">
+            {{phone}} | {{email}}<br>
+            <a href="{{website}}" target="_blank">{{website}}</a> | 
+            <a href="{{github}}" target="_blank">GitHub</a> | 
+            <a href="{{linkedin}}" target="_blank">LinkedIn</a><br>
+            {{address}}
+        </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>{{summary}}</p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        <!-- Experience items will be populated by script -->
+        <div id="experience-placeholder"></div>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="section">
+        <div class="section-title">Featured Projects</div>
+        <!-- Projects will be populated by script -->
+        <div id="projects-placeholder"></div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming & Web Development</h4>
+                <p><strong>Frontend:</strong> HTML, CSS, JavaScript, React, EJS, Tailwind CSS</p>
+                <p><strong>Backend:</strong> Node.js, Express.js, PHP</p>
+                <p><strong>Databases:</strong> MongoDB Atlas, SQL, MySQL</p>
+            </div>
+            <div class="skill-category">
+                <h4>Infrastructure & Cloud</h4>
+                <p><strong>Operating Systems:</strong> Windows, macOS, Ubuntu Linux</p>
+                <p><strong>Cloud:</strong> Azure, GCP, DNS, VMs, IAM</p>
+                <p><strong>Networking:</strong> TCP/IP, OSPF, RSTP, VPN, Firewalls</p>
+            </div>
+            <div class="skill-category">
+                <h4>CMS & Digital Tools</h4>
+                <p><strong>CMS:</strong> WordPress, Headless CMS, Custom Post Types</p>
+                <p><strong>SEO:</strong> Yoast, Rank Math, Google Analytics</p>
+                <p><strong>Design:</strong> Photoshop, GIMP, Elementor</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="section">
+        <div class="section-title">Education & Certifications</div>
+        <div class="cert-item">
+            <span class="cert-name">CompTIA Certifications (2021–2024):</span> A+, Network+, Security+, Cisco CCNA
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Web Technologies:</span> WordPress Development, Kubernetes LFS250, KCNA
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Durban University of Technology (2012–2015):</span> S4 Electronic Engineering (Pending In-service Training)
+        </div>
+        <div class="cert-item">
+            <span class="cert-name">Command Secondary School (2004):</span> National Certificate (Matric)
+        </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <p><strong>English:</strong> Fluent | <strong>isiZulu:</strong> Conversational | <strong>French:</strong> Conversational</p>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 2rem; color: #7f8c8d; font-size: 0.9rem;">
+        Generated from GitHub data | Last updated: {{last_updated}}
+    </div>
+</body>
+</html>

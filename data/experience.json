@@ -1,0 +1,59 @@
+{
+  "work_experience": [
+    {
+      "title": "IT Administrator & Course Facilitator",
+      "company": "BSG and Technologies",
+      "period": "Feb 2025 – Present",
+      "location": "Johannesburg, South Africa",
+      "type": "full-time",
+      "responsibilities": [
+        "Created and maintained SEO-friendly websites and LMS portals using WordPress, including custom post types and responsive templates",
+        "Developed site components using HTML, CSS, PHP, and JavaScript ensuring responsive and mobile-first web designs",
+        "Conducted performance analysis using SEO tools and provided reports on digital engagement and site visibility",
+        "Coordinated updates to Tutor LMS plugins, backups, and content consistency across multiple platforms",
+        "Collaborated with educational teams to align content strategy and user experience with best web practices",
+        "Supported cloud-based DNS, email, and web services through Linux server environments, cPanel, and Google Workspace"
+      ]
+    },
+    {
+      "title": "Founder & Freelance IT Support Technician",
+      "company": "del IT & Web",
+      "period": "April 2022 – Feb 2025",
+      "location": "Johannesburg & Durban, South Africa",
+      "type": "business",
+      "responsibilities": [
+        "Designed and hosted client websites using WordPress, Elementor, and integrated SEO tools",
+        "Customized themes, installed plugins, and configured hosting environments (Hostinger, GoDaddy, Webway)",
+        "Provided WordPress training and managed content for business clients, improving web visibility and indexing",
+        "Created promotional web pages and mailers for clients' digital campaigns",
+        "Used GIMP and Photoshop for image editing and content creation",
+        "Managed Linux tasks (permission management, FTP setup, CLI usage) for site deployment"
+      ]
+    },
+    {
+      "title": "Private Tutor",
+      "company": "Self-Employed",
+      "period": "February 2016 – March 2022",
+      "location": "Johannesburg & Durban, South Africa",
+      "type": "part-time",
+      "responsibilities": [
+        "Provided academic support in Mathematics and Sciences to high school and college students",
+        "Built strong client relationships and improved learning outcomes through personalized strategies",
+        "Developed learner-centred schedules and progress tracking systems"
+      ]
+    },
+    {
+      "title": "Educator & ICT Lab Assistant",
+      "company": "Kwa-Giba High School",
+      "period": "April 2009 – December 2012",
+      "location": "Hluhluwe, South Africa",
+      "type": "full-time",
+      "responsibilities": [
+        "Supported ICT Department and coordinated lab activities",
+        "Installed and maintained lab hardware and software",
+        "Ensured secure systems through antivirus deployment, firewall setup, and user access controls",
+        "Delivered full-time classroom teaching in Mathematics and Sciences"
+      ]
+    }
+  ]
+}

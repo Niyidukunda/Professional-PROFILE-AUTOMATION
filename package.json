@@ -1,0 +1,31 @@
+{
+  "name": "professional-profile-automation",
+  "version": "1.0.0",
+  "description": "Legendary automation system for managing professional materials with GitHub as single source of truth",
+  "main": "scripts/generate-cv.js",
+  "scripts": {
+    "generate": "node scripts/generate-cv.js",
+    "dev": "npm run generate && echo 'Opening CV in browser...'",
+    "build": "npm run generate",
+    "test": "echo 'Running data validation...' && node scripts/validate-data.js"
+  },
+  "keywords": [
+    "cv",
+    "resume",
+    "automation",
+    "github-actions",
+    "professional-profile",
+    "linkedin",
+    "portfolio"
+  ],
+  "author": "Fidel Niyidukunda",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Niyidukunda/professional-profile"
+  },
+  "devDependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "dependencies": {}
+}

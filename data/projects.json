@@ -1,0 +1,52 @@
+{
+  "featured_projects": [
+    {
+      "name": "Purpose & Perspective Blog",
+      "description": "Full-stack blog application with intelligent fallback systems and comprehensive security features",
+      "technologies": ["Node.js", "Express", "MongoDB", "EJS", "Security Implementation"],
+      "repository": "https://github.com/Niyidukunda/express-blog-app",
+      "category": "web-application",
+      "highlights": [
+        "Dual-storage architecture ensuring 100% uptime",
+        "XSS protection and rate limiting implementation",
+        "Auto-retry connection logic with health monitoring"
+      ]
+    },
+    {
+      "name": "Floral Kingdom Tours",
+      "description": "Headless CMS tourism platform with React frontend and WordPress backend",
+      "technologies": ["React", "WordPress", "Tailwind CSS", "Vercel", "REST API"],
+      "repository": "https://github.com/Niyidukunda/floral-kingdom-tours",
+      "live_url": "https://floral-kingdom-tours.vercel.app",
+      "category": "client-project",
+      "highlights": [
+        "Environment-aware API integration with fallback handling",
+        "Responsive carousel with mobile optimization",
+        "Complete booking system with form validation"
+      ]
+    },
+    {
+      "name": "Learning Management Systems",
+      "description": "Educational platforms with course management and student progress tracking",
+      "technologies": ["WordPress", "Tutor LMS", "Educational Technology"],
+      "category": "education",
+      "highlights": [
+        "Supporting 100+ students in remote and underserved backgrounds",
+        "Real-time user feedback integration",
+        "Offline/online sync capabilities"
+      ]
+    },
+    {
+      "name": "Kubernetes Learning Journey", 
+      "description": "Hands-on learning journal documenting containerization and orchestration exploration",
+      "technologies": ["Kubernetes", "Docker", "Linux", "DevOps"],
+      "repository": "https://github.com/Niyidukunda/kubernetes-learning-journal",
+      "category": "learning",
+      "highlights": [
+        "Complete setup guides for Minikube and kubectl",
+        "Practical deployment experiments and troubleshooting",
+        "ConfigMaps and Secrets implementation documentation"
+      ]
+    }
+  ]
+}
