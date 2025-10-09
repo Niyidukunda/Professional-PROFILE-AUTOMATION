@@ -1,13 +1,13 @@
 Full-Stack Developer & Network Support Technician | Johannesburg & Durban, South Africa
 
-Multidisciplinary IT professional with 3+ years hands-on experience in web development, LMS administration, and educational technology. Building reliable web applications while teaching coding to students, providing unique user experience insights. Strong background in WordPress development, SEO optimization, and network infrastructure.
+Multidisciplinary IT professional with 3+ years hands-on experience in web development, LMS administration, and educational technology. Building reliable web applications while teaching coding to students, providing unique user experience insights. Recently developed a legendary professional profile automation system with GitHub Actions, demonstrating expertise in automation architecture and single source of truth design patterns. Strong background in WordPress development, SEO optimization, and network infrastructure.
 
 🔧 Core Technologies: HTML • CSS • JavaScript • React • Node.js • Express.js
 
 📊 Recent Projects:
+• Professional Profile Automation System: Legendary automation system with GitHub as single source of truth for managing p...
 • Purpose & Perspective Blog: Full-stack blog application with intelligent fallback systems and comprehensive ...
 • Floral Kingdom Tours: Headless CMS tourism platform with React frontend and WordPress backend...
-• Learning Management Systems: Educational platforms with course management and student progress tracking...
 
 🎓 Certifications: CompTIA A+ • CompTIA Network+ • CompTIA Security+
 

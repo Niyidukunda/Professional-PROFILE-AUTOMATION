@@ -1,6 +1,20 @@
 {
   "featured_projects": [
     {
+      "name": "Professional Profile Automation System",
+      "description": "Legendary automation system with GitHub as single source of truth for managing professional materials across platforms",
+      "technologies": ["Node.js", "GitHub Actions", "JSON", "HTML/CSS", "Git", "Automation"],
+      "repository": "https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION",
+      "category": "automation",
+      "highlights": [
+        "Single source of truth architecture: Update once, deploy everywhere",
+        "Automated CV generation with responsive HTML design and LinkedIn optimization",
+        "GitHub Actions workflow for continuous integration and deployment",
+        "Amateur-friendly documentation with 60%+ success rate for new users",
+        "Demonstrates technical skills while solving real-world professional needs"
+      ]
+    },
+    {
       "name": "Purpose & Perspective Blog",
       "description": "Full-stack blog application with intelligent fallback systems and comprehensive security features",
       "technologies": ["Node.js", "Express", "MongoDB", "EJS", "Security Implementation"],
