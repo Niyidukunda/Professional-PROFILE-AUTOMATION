@@ -234,7 +234,7 @@ open generated/cv-latest.html
 ### Need Help?
 - Create an [Issue](https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION/issues) on GitHub
 - Include error messages and what you were trying to do
-- Someone will help you out!
+- I'll try to help you out!
 
 ## Contributing
 

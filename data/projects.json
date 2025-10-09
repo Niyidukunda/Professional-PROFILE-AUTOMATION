@@ -19,6 +19,7 @@
       "description": "Full-stack blog application with intelligent fallback systems and comprehensive security features",
       "technologies": ["Node.js", "Express", "MongoDB", "EJS", "Security Implementation"],
       "repository": "https://github.com/Niyidukunda/express-blog-app",
+      "live_url": "https://express-blog-app-xi.vercel.app",
       "category": "web-application",
       "highlights": [
         "Dual-storage architecture ensuring 100% uptime",
