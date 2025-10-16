@@ -5,11 +5,17 @@ on:
     paths: 
       - 'data/*.json'
       - 'templates/*'
+      - 'scripts/*'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
-  generate:
+  generate-and-deploy:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     
     steps:
     - name: Checkout repository
@@ -24,20 +30,30 @@ jobs:
     - name: Install dependencies
       run: npm install
     
-    - name: Create generated directory
-      run: mkdir -p generated
+    - name: Generate professional materials
+      run: npm run build
     
-    - name: Generate CV and LinkedIn content
-      run: npm run generate
-    
-    - name: Commit generated files
+    - name: Commit generated files to repository
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add generated/
+        git add generated/ docs/
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
           git commit -m "🤖 Auto-update professional materials - $(date +'%Y-%m-%d %H:%M')"
           git push
         fi
+    
+    # Deploy to GitHub Pages without Jekyll
+    - name: Setup Pages (No Jekyll)
+      uses: actions/configure-pages@v4
+    
+    - name: Upload Pages artifact (Static Files)
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./docs
+    
+    - name: Deploy to GitHub Pages (Static)
+      id: deployment
+      uses: actions/deploy-pages@v4

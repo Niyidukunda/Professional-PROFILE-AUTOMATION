@@ -4,10 +4,12 @@
   "description": "Legendary automation system for managing professional materials with GitHub as single source of truth",
   "main": "scripts/generate-cv.js",
   "scripts": {
-    "generate": "node scripts/generate-cv.js",
+    "generate": "node scripts/generate-cv.js",  
+    "generate-page": "node scripts/generate-cv-page.js",
     "dev": "npm run generate && echo 'Opening CV in browser...'",
-    "build": "npm run generate",
-    "test": "echo 'Running data validation...' && node scripts/validate-data.js"
+    "build": "npm run generate && npm run generate-page",
+    "test": "echo 'Running data validation...' && node scripts/validate-data.js",
+    "deploy": "npm run build && echo 'CV page ready for GitHub Pages deployment'"
   },
   "keywords": [
     "cv",

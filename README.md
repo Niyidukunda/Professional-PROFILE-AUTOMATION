@@ -69,16 +69,22 @@ npm install
 
 ### 3. Generate Materials
 ```bash
-npm run generate
+npm run build
 ```
 
-### 4. View Results
-- **Windows**: Double-click `generated/cv-latest.html` to open in browser
-- **Mac/Linux**: `open generated/cv-latest.html` 
-- Copy content from `generated/linkedin-bio.txt` for LinkedIn
-- Use `generated/profile-summary.json` for other platforms
+### 4. Enable GitHub Pages (Get Your CV Link!)
+1. Go to your repository Settings → Pages
+2. Select `main` branch and `/docs` folder  
+3. Save settings
+4. Your CV will be live at: `https://YOUR-USERNAME.github.io/Professional-PROFILE-AUTOMATION/`
 
-### 5. Make It Yours!
+### 5. View Results
+- **Standalone CV**: Your live CV link (from step 4)
+- **Local CV**: Double-click `generated/cv-latest.html` to open in browser
+- **LinkedIn**: Copy content from `generated/linkedin-bio.txt`
+- **Other Platforms**: Use `generated/profile-summary.json`
+
+### 6. Make It Yours!
 Edit the files in the `data/` folder to replace my information with yours:
 - `data/personal.json` - Your name, contact, summary
 - `data/experience.json` - Your work history  
@@ -162,6 +168,14 @@ function generateNewFormat(data) {
 - Interactive project links
 - Professional color scheme
 
+### Standalone CV Website (`docs/index.html`)
+- **Live URL**: `https://niyidukunda.github.io/Professional-PROFILE-AUTOMATION/`
+- Standalone CV website for direct sharing
+- Automatically deployed to GitHub Pages
+- Mobile-responsive and print-friendly
+- Shows last update date
+- Perfect for sharing your CV link
+
 ### LinkedIn Bio (`generated/linkedin-bio.txt`)
 - Optimized for LinkedIn character limits
 - Hashtag suggestions included
@@ -175,9 +189,18 @@ function generateNewFormat(data) {
 
 ## Scripts
 
-- `npm run generate` - Generate all materials
+- `npm run generate` - Generate all materials (CV, LinkedIn, summary)
+- `npm run generate-page` - Generate standalone CV website
+- `npm run build` - Generate all materials + standalone CV page
 - `npm run dev` - Generate and open CV in browser
-- `npm run build` - Production build (same as generate)
+- `npm run deploy` - Full build ready for GitHub Pages deployment
+
+### Windows Users
+Double-click `deploy.bat` for a guided setup that:
+- Installs dependencies automatically
+- Generates all materials
+- Shows you the next steps for GitHub Pages
+- Provides preview instructions
 
 ## GitHub Actions
 
@@ -189,14 +212,39 @@ The workflow automatically:
 
 ## Deployment
 
-### GitHub Pages (Optional)
-Enable GitHub Pages to host your HTML CV:
-1. Go to repository Settings
-2. Enable Pages from the `generated/` folder
-3. Your CV will be live at `https://username.github.io/professional-profile/cv-latest.html`
+### GitHub Pages - Standalone CV
+The system automatically deploys your CV to GitHub Pages at:
+**`https://niyidukunda.github.io/Professional-PROFILE-AUTOMATION/`**
+
+To enable GitHub Pages:
+1. Go to your repository Settings
+2. Navigate to Pages section
+3. Select "Deploy from a branch"
+4. Choose `main` branch and `/docs` folder
+5. Save settings
+
+Your CV will be live within minutes and auto-update whenever you push changes!
+
+### Manual GitHub Pages Setup (Alternative)
+You can also host the generated CV files:
+1. Enable Pages from the `generated/` folder
+2. Your CV will be at `https://username.github.io/repo-name/cv-latest.html`
 
 ### Local Development
 For testing changes locally:
+
+**Preview your CV website:**
+```bash
+# Start local server
+python -m http.server 8000 --directory docs
+
+# Or use Node.js
+npx serve docs
+
+# Then visit: http://localhost:8000
+```
+
+**Generate changes:**
 ```bash
 npm run generate
 open generated/cv-latest.html
