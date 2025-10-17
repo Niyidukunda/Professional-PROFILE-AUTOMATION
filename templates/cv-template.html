@@ -159,10 +159,9 @@
         <div class="name">{{name}}</div>
         <div class="contact-info">
             {{phone}} | {{email}}<br>
-            <a href="{{website}}" target="_blank">{{website}}</a> | 
-            <a href="{{github}}" target="_blank">GitHub</a> | 
-            <a href="{{linkedin}}" target="_blank">LinkedIn</a><br>
-            {{address}}
+            Website: {{website}}<br>
+            GitHub: {{github}}<br>
+            LinkedIn: {{linkedin}}<br>
         </div>
     </div>
 
@@ -184,6 +183,7 @@
         <div class="section-title">Featured Projects</div>
         <!-- Projects will be populated by script -->
         <div id="projects-placeholder"></div>
+        <!-- Project GitHub links will be rendered by the script in projects-placeholder -->
     </div>
 
     <!-- Skills -->
@@ -234,9 +234,18 @@
         <p><strong>English:</strong> Fluent | <strong>isiZulu:</strong> Conversational | <strong>French:</strong> Conversational</p>
     </div>
 
+    <!-- References (now at the end) -->
+    <div class="section">
+        <div class="section-title">References</div>
+        <div id="references-placeholder"></div>
+    </div>
+
     <!-- Footer -->
     <div style="text-align: center; margin-top: 2rem; color: #7f8c8d; font-size: 0.9rem;">
-        Generated from GitHub data | Last updated: {{last_updated}}
+        This CV is automatically generated and maintained through a professional profile automation system.<br>
+        For the most current version, visit this URL directly:<br>
+        <a href="https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION" style="color:#3498db;word-break:break-all;">https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION</a><br>
+        <span style="font-size:0.85em;">Last updated: {{last_updated}}</span>
     </div>
 </body>
 </html>

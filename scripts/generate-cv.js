@@ -62,9 +62,21 @@ function generateProjectsHTML(projects) {
                 </div>
             ` : ''}
             <div class="project-links">
-                ${project.repository ? `<a href="${project.repository}" target="_blank">View Code</a>` : ''}
-                ${project.live_url ? `<a href="${project.live_url}" target="_blank">Live Demo</a>` : ''}
+                ${project.repository ? `<div>Repository: ${project.repository}</div>` : ''}
+                ${project.live_url ? `<div>Live URL: ${project.live_url}</div>` : ''}
             </div>
+        </div>
+    `).join('');
+}
+
+// Generate references HTML
+function generateReferencesHTML(references) {
+    if (!references || !references.length) return '';
+    return references.map(ref => `
+        <div style="margin-bottom: 0.8rem;">
+            <strong>${ref.name}</strong> – ${ref.title}<br>
+            ${ref.phone ? `Phone: ${ref.phone}` : ''}
+            ${ref.email ? `<br>Email: ${ref.email}` : ''}
         </div>
     `).join('');
 }
@@ -103,10 +115,14 @@ function generateCV() {
     // Generate and insert experience HTML
     const experienceHTML = generateExperienceHTML(data.work_experience);
     html = html.replace('<div id="experience-placeholder"></div>', experienceHTML);
-    
-    // Generate and insert projects HTML
+
+    // Generate and insert projects HTML (with full URLs)
     const projectsHTML = generateProjectsHTML(data.featured_projects);
     html = html.replace('<div id="projects-placeholder"></div>', projectsHTML);
+
+    // Generate and insert references HTML
+    const referencesHTML = generateReferencesHTML(data.references);
+    html = html.replace('<div id="references-placeholder"></div>', referencesHTML);
     
     // Ensure generated directory exists
     const generatedDir = path.join(__dirname, '../generated');

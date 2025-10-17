@@ -4,10 +4,13 @@
   "description": "Legendary automation system for managing professional materials with GitHub as single source of truth",
   "main": "scripts/generate-cv.js",
   "scripts": {
-    "generate": "node scripts/generate-cv.js",  
+    "generate": "node scripts/generate-cv.js",
     "generate-page": "node scripts/generate-cv-page.js",
     "dev": "npm run generate && echo 'Opening CV in browser...'",
     "build": "npm run generate && npm run generate-page",
+    "export-pdf": "node scripts/export-cv-pdf.js",
+    "export-docx": "node scripts/export-cv-docx.js",
+    "export-all": "npm run export-pdf && npm run export-docx",
     "test": "echo 'Running data validation...' && node scripts/validate-data.js",
     "deploy": "npm run build && echo 'CV page ready for GitHub Pages deployment'"
   },
@@ -29,5 +32,8 @@
   "devDependencies": {
     "puppeteer": "^21.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "blob-to-buffer": "^1.2.9",
+    "html-docx-js": "^0.3.1"
+  }
 }
