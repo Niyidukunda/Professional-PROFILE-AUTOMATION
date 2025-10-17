@@ -1,20 +1,17 @@
 Full-Stack Developer & Network Support Technician | Johannesburg & Durban, South Africa
 
-I am an IT professional with over 3 years of experience in web development, automation, and educational technology. I build websites, online learning platforms, and automation systems that help people and businesses work smarter. My recent work includes developing a professional profile automation system using GitHub Actions and cloud technologies. I have a strong background in WordPress, SEO, networking, and cloud infrastructure.
+I am an IT professional with over 3 years of experience in web development and helping students learn technology. I build websites and online learning platforms, and I enjoy making things simple and easy to use. I recently created a system that keeps my CV and professional profile up to date automatically using GitHub. I have a strong background in WordPress, SEO, and computer networks.
 
-Core Technologies: HTML, CSS, JavaScript, React, Node.js, Express.js, PHP, MongoDB, SQL, WordPress, Tailwind CSS, EJS, Tutor LMS, Azure, GCP, Linux, Docker, Kubernetes
+🔧 Core Technologies: HTML • CSS • JavaScript • React • Node.js • Express.js
 
-Recent Projects:
-- Professional Profile Automation System: Automated platform for managing professional materials using GitHub and cloud workflows.
-- Purpose & Perspective Blog: Full-stack blog application with security, reliability, and intelligent fallback systems.
-- Floral Kingdom Tours: Tourism platform with React frontend, WordPress backend, and mobile optimization.
+📊 Recent Projects:
+• Professional Profile Automation System: Legendary automation system with GitHub as single source of truth for managing p...
+• Purpose & Perspective Blog: Full-stack blog application with intelligent fallback systems and comprehensive ...
+• Floral Kingdom Tours: Headless CMS tourism platform with React frontend and WordPress backend...
 
-Certifications: CompTIA A+, CompTIA Network+, CompTIA Security+, Cisco CCNA, Kubernetes KCNA
+🎓 Certifications: CompTIA A+ • CompTIA Network+ • CompTIA Security+
 
-Founder: del IT & Web
-Building accessible technology solutions in South Africa.
+💼 Founder: del IT & Web
+🌍 Building accessible technology solutions in South Africa
 
-Links:
-- GitHub Profile: https://github.com/Niyidukunda
-- GitHub Repositories: https://github.com/Niyidukunda?tab=repositories
-- Personal Website: https://fidel-devprojects.vercel.app/
+#WebDevelopment #EducationalTechnology #FullStackDeveloper
