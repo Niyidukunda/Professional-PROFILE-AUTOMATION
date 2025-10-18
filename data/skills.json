@@ -1,15 +1,5 @@
 {
   "technical_skills": {
-    "key_skills": [
-      "Windows 7-11, Windows Server (setup, maintenance, user management)",
-      "Linux server management, cPanel, cloud services (Azure, GCP, DNS, VMs)",
-      "Network support: TCP/IP, LAN/WAN, VPNs, firewalls, user access controls",
-      "Website and LMS administration (WordPress, Tutor LMS, custom post types)",
-      "Remote support, troubleshooting, and documentation",
-      "Security: Antivirus deployment, firewall setup, RBAC, MFA",
-      "Scripting and automation (Node.js, GitHub Actions)",
-      "Customer service, training, and onboarding"
-    ],
     "programming": {
       "frontend": ["HTML", "CSS", "JavaScript", "React", "EJS", "Tailwind CSS"],
       "backend": ["Node.js", "Express.js", "PHP"],
@@ -17,7 +7,7 @@
     },
     "web_technologies": {
       "cms": ["WordPress", "Headless CMS", "Custom Post Types"],
-      "tools": ["Elementor", "Tutor LMS", "SEO Tools", "Git"],
+      "tools": ["Elementor", "Tutor LMS", "SEO Tools", "Git", "Bubble (familiar)", "Airtable (familiar)", "Zapier (familiar)", "Make (familiar)", "Shopify (learning)", "Webflow (learning)", "GSAP (learning)", "Lottie (learning)", "Figma (collaboration)", "Adobe XD (collaboration)", "Liquid (basic)", "E-commerce (basic)", "CMS Collections"],
       "seo": ["Yoast", "Rank Math", "Google Analytics", "Search Console"]
     },
     "infrastructure": {
@@ -26,15 +16,40 @@
       "networking": ["TCP/IP", "OSPF", "RSTP", "VTP", "LAN/WLAN", "VoIP"],
       "security": ["Firewalls", "VPNs", "RBAC", "MFA", "Network Security"]
     },
-    "design_tools": ["Photoshop", "GIMP", "Affinity Photo"],
+  "design_tools": ["Photoshop", "GIMP", "Affinity Photo", "Figma (collaboration)", "Adobe XD (collaboration)", "Lottie (learning)", "GSAP (learning)", "Webflow (learning)", "Shopify (learning)", "Bubble (familiar)", "Airtable (familiar)", "Zapier (familiar)", "Make (familiar)", "Liquid (basic)", "E-commerce (basic)", "CMS Collections"],
     "deployment": ["Vercel", "Render", "GitHub integration", "Linux server management"]
   },
   "certifications": [
-    "CompTIA A+",
-    "CompTIA Network+",
-    "CompTIA Security+",
-    "Cisco CCNA",
-    "Kubernetes KCNA"
+    {
+      "name": "Adaptability & Fast Learning",
+      "year": "Ongoing",
+      "issuer": "Self-driven"
+    },
+    {
+      "name": "CompTIA A+",
+      "year": "2021-2024",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "CompTIA Network+",
+      "year": "2021-2024", 
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "CompTIA Security+",
+      "year": "2021-2024",
+      "issuer": "CompTIA"
+    },
+    {
+      "name": "Cisco CCNA",
+      "year": "2021-2024",
+      "issuer": "Cisco"
+    },
+    {
+      "name": "Kubernetes LFS250, KCNA",
+      "year": "2024",
+      "issuer": "Linux Foundation"
+    }
   ],
   "education": [
     {
@@ -50,6 +65,7 @@
       "status": "Completed"
     }
   ],
+  "notes": "While I am new to Webflow, Shopify, GSAP, and Lottie, my experience with WordPress, custom themes, and web animations means I can learn these quickly. I have worked with no-code tools like Bubble, Airtable, and Zapier, and have collaborated with designers using Figma and Adobe XD. My strong foundation in web development and eagerness to learn new platforms make me a valuable addition to any team.",
   "languages": [
     {"language": "English", "level": "Fluent"},
     {"language": "isiZulu", "level": "Conversational"},
