@@ -1,5 +1,15 @@
 {
   "technical_skills": {
+    "key_skills": [
+      "Windows 7-11, Windows Server (setup, maintenance, user management)",
+      "Linux server management, cPanel, cloud services (Azure, GCP, DNS, VMs)",
+      "Network support: TCP/IP, LAN/WAN, VPNs, firewalls, user access controls",
+      "Website and LMS administration (WordPress, Tutor LMS, custom post types)",
+      "Remote support, troubleshooting, and documentation",
+      "Security: Antivirus deployment, firewall setup, RBAC, MFA",
+      "Scripting and automation (Node.js, GitHub Actions)",
+      "Customer service, training, and onboarding"
+    ],
     "programming": {
       "frontend": ["HTML", "CSS", "JavaScript", "React", "EJS", "Tailwind CSS"],
       "backend": ["Node.js", "Express.js", "PHP"],
@@ -20,31 +30,11 @@
     "deployment": ["Vercel", "Render", "GitHub integration", "Linux server management"]
   },
   "certifications": [
-    {
-      "name": "CompTIA A+",
-      "year": "2021-2024",
-      "issuer": "CompTIA"
-    },
-    {
-      "name": "CompTIA Network+",
-      "year": "2021-2024", 
-      "issuer": "CompTIA"
-    },
-    {
-      "name": "CompTIA Security+",
-      "year": "2021-2024",
-      "issuer": "CompTIA"
-    },
-    {
-      "name": "Cisco CCNA",
-      "year": "2021-2024",
-      "issuer": "Cisco"
-    },
-    {
-      "name": "Kubernetes LFS250, KCNA",
-      "year": "2024",
-      "issuer": "Linux Foundation"
-    }
+    "CompTIA A+",
+    "CompTIA Network+",
+    "CompTIA Security+",
+    "Cisco CCNA",
+    "Kubernetes KCNA"
   ],
   "education": [
     {

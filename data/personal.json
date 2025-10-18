@@ -8,7 +8,16 @@
   "address": "Unit 17 Mogale Gardens, Muldersdrift, Johannesburg, Gauteng. 1747",
   "location_short": "Johannesburg & Durban, South Africa",
   "title": "Full-Stack Developer & Network Support Technician",
-  "summary": "I am an IT professional with over 3 years of experience in web development and helping students learn technology. I build websites and online learning platforms, and I enjoy making things simple and easy to use. I recently created a system that keeps my CV and professional profile up to date automatically using GitHub. I have a strong background in WordPress, SEO, and computer networks.",
+  "summary": "I am an IT professional with over 3 years of hands-on experience in web development, frontend and backend design/implementation, and educational technology. I build websites and online learning platforms, focusing on creating simple and effective solutions for users. My background includes WordPress development, SEO optimization, network infrastructure, and delivering coding and technology support to students. I recently created a system that keeps my CV and professional profile up to date automatically using GitHub, demonstrating expertise in automation and single source of truth design patterns.",
+  "custom_note": "Note: While I have not worked directly for a U.S.-based MSP, my IT support and business experience required multi-client management, remote troubleshooting, and documentation standards similar to MSP environments. My experience with ticketing, user onboarding, and cloud-based tools provides a strong foundation for MSP support roles.",
+  "additional_strengths": [
+    "Fast learner, eager to expand technical expertise",
+    "Strong written and verbal communication; experience presenting and training groups",
+    "Dependable, with a consistent work ethic and attention to detail",
+    "Experience with cloud platforms, automation, and documentation best practices",
+    "My experience with firewalls, VPNs, and network security, along with formal certification in Cisco CCNA, provides a solid foundation for vendor-specific solutions like SonicWall/Meraki."
+  ],
+  "projects_link_note": "All mentioned projects and more can be found at: https://github.com/Niyidukunda?tab=repositories",
   "last_updated": "October 2025",
   "references": [
     {
