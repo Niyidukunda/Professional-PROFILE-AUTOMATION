@@ -11,15 +11,20 @@
       "seo": ["Yoast", "Rank Math", "Google Analytics", "Search Console"]
     },
     "infrastructure": {
-      "operating_systems": ["Windows 7-11", "macOS", "Ubuntu Linux", "Windows Server"],
+      "operating_systems": ["Windows 7-11", "Windows Server", "Ubuntu Linux", "macOS", "Proxmox (learning)"],
       "cloud": ["Azure", "GCP", "DNS", "VMs", "IAM"],
-      "networking": ["TCP/IP", "OSPF", "RSTP", "VTP", "LAN/WLAN", "VoIP"],
-      "security": ["Firewalls", "VPNs", "RBAC", "MFA", "Network Security"]
+      "networking": ["TCP/IP", "LAN/WAN", "VoIP", "Mikrotik (VPN, routing, firewall)", "OSPF", "RSTP", "VTP", "Wireless (Unifi, TP-Link Omada, Cambium, UBNT)", "PABX (learning)", "3CX (learning)", "Yealink (learning)", "Grandstream (learning)", "Gigaset (learning)", "Snom (learning)", "VPN Protocols (L2TP, PPTP, IPsec)", "Advanced troubleshooting"],
+      "security": ["Firewalls (FortiGate, Sophos - learning)", "VPNs", "RBAC", "MFA", "Network Security"]
     },
     "design_tools": ["Photoshop", "GIMP", "Affinity Photo"],
     "deployment": ["Vercel", "Render", "GitHub integration", "Linux server management"]
   },
   "certifications": [
+    {
+      "name": "Adaptability & Fast Learning",
+      "year": "Ongoing",
+      "issuer": "Self-driven"
+    },
     {
       "name": "CompTIA A+",
       "year": "2021-2024",
@@ -60,9 +65,18 @@
       "status": "Completed"
     }
   ],
+  "notes": "While I am new to Proxmox, 3CX, and some phone systems, my experience with Linux, Windows Server, Mikrotik, and troubleshooting a wide range of network and VOIP issues means I can learn these quickly. I am committed to excellent communication, documentation, and continuous learning to support both customers and teams.",
   "languages": [
     {"language": "English", "level": "Fluent"},
     {"language": "isiZulu", "level": "Conversational"},
     {"language": "French", "level": "Conversational"}
-  ]
+    ],
+    "php_stack": {
+      "php": "Familiar with PHP basics, actively learning advanced concepts and frameworks (CakePHP, Laravel). Strong ability to master new tools quickly.",
+      "wordpress": "Extensive experience building, customizing, and maintaining WordPress sites, including custom themes, plugins, and efficient builds.",
+      "mysql": "Proficient in MySQL database design, optimization, and troubleshooting.",
+      "api_integration": "Skilled in integrating REST APIs with WordPress and custom solutions.",
+      "git": "Daily use of Git for version control and collaboration.",
+      "linux_server_management": "Confident managing Linux servers for hosting, deployment, and troubleshooting."
+    }
 }

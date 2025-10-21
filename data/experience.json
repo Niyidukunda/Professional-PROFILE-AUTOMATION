@@ -7,32 +7,34 @@
       "location": "Johannesburg, South Africa",
       "type": "full-time",
       "responsibilities": [
-        "Created and maintained SEO-friendly websites and LMS portals using WordPress, including custom post types and responsive templates",
-        "Developed site components using HTML, CSS, PHP, and JavaScript ensuring responsive and mobile-first web designs",
-        "Conducted performance analysis using SEO tools and provided reports on digital engagement and site visibility",
-        "Coordinated updates to Tutor LMS plugins, backups, and content consistency across multiple platforms",
-        "Collaborated with educational teams to align content strategy and user experience with best web practices",
-        "Supported cloud-based DNS, email, and web services through Linux server environments, cPanel, and Google Workspace"
+        "Configured, customized, and maintained WordPress sites for staff and students, including plugin setups, theme management, and site optimization.",
+        "Set up and managed CMS and LMS platforms, supporting course delivery, student and learner administration, and user access.",
+        "Integrated APIs and ePayment solutions, and implemented security best practices for web platforms.",
+        "Utilized SEO tools and marketing plugins to improve site visibility and engagement.",
+        "Provided ticket support and technical assistance for users, ensuring prompt resolution and clear communication.",
+        "Documented processes, solutions, and platform configurations to support team knowledge and continuity.",
+        "Remained versatile and proactive in learning new technologies and tools to expand my capabilities."
       ]
+        ,
+        "note": "In addition to my IT administration duties, I have extensive experience building and maintaining WordPress sites, integrating APIs, and managing MySQL databases. I use Git daily for version control and am confident managing Linux servers for hosting and deployment. While I am still learning advanced PHP and frameworks like CakePHP, my strong problem-solving skills and ability to learn quickly allow me to deliver reliable results and adapt to new challenges."
     },
     {
-      "title": "Founder & Freelance IT Support Technician",
+  "title": "IT Support Technician",
       "company": "del IT & Web",
       "period": "April 2022 – Feb 2025",
       "location": "Johannesburg & Durban, South Africa",
       "type": "business",
       "responsibilities": [
-        "Designed and hosted client websites using WordPress, Elementor, and integrated SEO tools",
-        "Customized themes, installed plugins, and configured hosting environments (Hostinger, GoDaddy, Webway)",
-        "Provided WordPress training and managed content for business clients, improving web visibility and indexing",
-        "Created promotional web pages and mailers for clients' digital campaigns",
-        "Used GIMP and Photoshop for image editing and content creation",
-        "Managed Linux tasks (permission management, FTP setup, CLI usage) for site deployment"
+        "Worked as a freelance IT support technician for small businesses, providing troubleshooting for network, wireless, and VOIP issues.",
+        "Configured and maintained Linux servers, Windows systems, and cloud services.",
+        "Set up and managed routing and switching, VPNs, and firewall rules for secure client networks.",
+        "Documented faults, solutions, and follow-ups for clients.",
+        "While I am new to some phone systems and PABX, my strong troubleshooting skills and willingness to learn help me adapt quickly."
       ]
     },
     {
-      "title": "Private Tutor",
-      "company": "Self-Employed",
+  "title": "Private Tutor",
+  "company": "",
       "period": "February 2016 – March 2022",
       "location": "Johannesburg & Durban, South Africa",
       "type": "part-time",

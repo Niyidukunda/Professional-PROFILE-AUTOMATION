@@ -1,15 +1,15 @@
 Full-Stack Developer & Network Support Technician | Johannesburg & Durban, South Africa
 
-I am an IT professional with over 3 years of experience in web development and helping students learn technology. I build websites and online learning platforms, and I enjoy making things simple and easy to use. I recently created a system that keeps my CV and professional profile up to date automatically using GitHub. I have a strong background in WordPress, SEO, and computer networks.
+I am a versatile technologist with hands-on experience across web development, IT support, and automation. My toolkit spans WordPress, PHP, MySQL, Node.js, React, and API integration, as well as infrastructure, networking, and Linux server management. I enjoy building solutions that are robust, scalable, and user-focused—whether that means developing custom web applications, optimizing cloud deployments, or troubleshooting complex network issues. I am comfortable learning new frameworks and tools, and I thrive in environments where adaptability, clear communication, and ownership are valued. My approach is practical and collaborative: sharing knowledge and delivering results that make a real impact—no matter the technology stack.
 
 🔧 Core Technologies: HTML • CSS • JavaScript • React • Node.js • Express.js
 
 📊 Recent Projects:
 • Professional Profile Automation System: Legendary automation system with GitHub as single source of truth for managing p...
-• Purpose & Perspective Blog: Full-stack blog application with intelligent fallback systems and comprehensive ...
+• Personal Live Blog: Full-stack blog application with intelligent fallback systems and comprehensive ...
 • Floral Kingdom Tours: Headless CMS tourism platform with React frontend and WordPress backend...
 
-🎓 Certifications: CompTIA A+ • CompTIA Network+ • CompTIA Security+
+🎓 Certifications: Adaptability & Fast Learning • CompTIA A+ • CompTIA Network+
 
 💼 Founder: del IT & Web
 🌍 Building accessible technology solutions in South Africa

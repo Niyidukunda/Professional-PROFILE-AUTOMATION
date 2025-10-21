@@ -15,7 +15,7 @@
       ]
     },
     {
-      "name": "Purpose & Perspective Blog",
+  "name": "Personal Live Blog",
       "description": "Full-stack blog application with intelligent fallback systems and comprehensive security features",
       "technologies": ["Node.js", "Express", "MongoDB", "EJS", "Security Implementation"],
       "repository": "https://github.com/Niyidukunda/express-blog-app",
@@ -38,8 +38,9 @@
         "Environment-aware API integration with fallback handling",
         "Responsive carousel with mobile optimization",
         "Complete booking system with form validation"
-      ]
-    },
+      ],
+      "note": "This site is live and was created for a client. URL: https://floral-kingdom-tours.vercel.app/. This project demonstrates my ability to build and maintain WordPress backends, integrate REST APIs, and manage MySQL databases. I handled deployment on Linux-based hosting and used Git for version control throughout."
+     },
     {
       "name": "Learning Management Systems",
       "description": "Educational platforms with course management and student progress tracking",
