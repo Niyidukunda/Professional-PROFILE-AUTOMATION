@@ -5,7 +5,6 @@
       "description": "Legendary automation system with GitHub as single source of truth for managing professional materials across platforms",
       "technologies": ["Node.js", "GitHub Actions", "JSON", "HTML/CSS", "Git", "Automation"],
       "repository": "https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION",
-      "category": "automation",
       "highlights": [
         "Single source of truth architecture: Update once, deploy everywhere",
         "Automated CV generation with responsive HTML design and LinkedIn optimization",
@@ -15,12 +14,11 @@
       ]
     },
     {
-  "name": "Personal Live Blog",
+      "name": "Personal Live Blog",
       "description": "Full-stack blog application with intelligent fallback systems and comprehensive security features",
       "technologies": ["Node.js", "Express", "MongoDB", "EJS", "Security Implementation"],
       "repository": "https://github.com/Niyidukunda/express-blog-app",
-  "live_url": "https://express-blog-app-dlul.onrender.com/",
-      "category": "web-application",
+      "live_url": "https://express-blog-app-dlul.onrender.com/",
       "highlights": [
         "Dual-storage architecture ensuring 100% uptime",
         "XSS protection and rate limiting implementation",
@@ -33,31 +31,27 @@
       "technologies": ["React", "WordPress", "Tailwind CSS", "Vercel", "REST API"],
       "repository": "https://github.com/Niyidukunda/floral-kingdom-tours",
       "live_url": "https://floral-kingdom-tours.vercel.app",
-      "category": "client-project",
       "highlights": [
         "Environment-aware API integration with fallback handling",
         "Responsive carousel with mobile optimization",
         "Complete booking system with form validation"
-      ],
-      "note": "This site is live and was created for a client. URL: https://floral-kingdom-tours.vercel.app/. This project demonstrates my ability to build and maintain WordPress backends, integrate REST APIs, and manage MySQL databases. I handled deployment on Linux-based hosting and used Git for version control throughout."
-     },
+      ]
+    },
     {
       "name": "Learning Management Systems",
       "description": "Educational platforms with course management and student progress tracking",
       "technologies": ["WordPress", "Tutor LMS", "Educational Technology"],
-      "category": "education",
       "highlights": [
-  "Supporting 50+ students in remote and underserved backgrounds",
+        "Supporting 50+ students in remote and underserved backgrounds",
         "Real-time user feedback integration",
         "Offline/online sync capabilities"
       ]
     },
     {
-      "name": "Kubernetes Learning Journey", 
+      "name": "Kubernetes Learning Journey",
       "description": "Hands-on learning journal documenting containerization and orchestration exploration",
       "technologies": ["Kubernetes", "Docker", "Linux", "DevOps"],
       "repository": "https://github.com/Niyidukunda/kubernetes-learning-journal",
-      "category": "learning",
       "highlights": [
         "Complete setup guides for Minikube and kubectl",
         "Practical deployment experiments and troubleshooting",

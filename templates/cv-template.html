@@ -3,77 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{name}} - CV</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 21cm;
-            margin: 0 auto;
-            padding: 2cm;
-            background: white;
-        }
-        
-        .header {
-            text-align: center;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .name { 
-            font-size: 2.5rem; 
-            font-weight: bold; 
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-        }
-        
-        .contact-info {
-            font-size: 0.95rem;
-            color: #555;
-            line-height: 1.8;
-        }
-        
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .section {
-            margin-bottom: 2rem;
-        }
-        
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #2c3e50;
-            border-bottom: 1px solid #bdc3c7;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .job {
-            margin-bottom: 1.5rem;
-        }
-        
-        .job-header {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 0.3rem;
-        }
-        
-        .job-details {
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-        
-        .responsibilities {
-            list-style: none;
-            padding-left: 0;
+    <div class="header">
+        <div class="name">{{name}}</div>
+        <div class="contact-info">
+            {{phone}} | {{email}}<br>
+            Location: {{location}}<br>
+            Website: {{website}}<br>
+            GitHub: {{github}}<br>
+            LinkedIn: {{linkedin}}<br>
+        </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>{{summary}}</p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        <div id="experience-placeholder"></div>
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="section">
+        <div class="section-title">Featured Projects</div>
+        <div id="projects-placeholder"></div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section" id="major-skills-placeholder"></div>
+
+    <!-- Education & Certifications -->
+    <div class="section" id="certifications-placeholder"></div>
+
+    <!-- Languages -->
+    <div class="section" id="languages-placeholder"></div>
+
+    <!-- References -->
+    <div class="section" style="margin-bottom:2.5rem;">
+        <div class="section-title">References</div>
+        <div id="references-placeholder"></div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; margin-top: 2rem; color: #7f8c8d; font-size: 0.9rem;">
+    This CV was designed and is maintained by myself through a professional profile automation system using Git and CI/CD workflows.<br>
+    For the most current version, visit this URL directly:<br>
+    <a href="https://niyidukunda.github.io/Professional-PROFILE-AUTOMATION/" style="color:#3498db;word-break:break-all;">https://niyidukunda.github.io/Professional-PROFILE-AUTOMATION/</a><br>
+    <span style="font-size:0.85em;">Last updated: {{last_updated}}</span>
+    </div>
         }
         
         .responsibilities li {

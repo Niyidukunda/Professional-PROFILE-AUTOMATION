@@ -4,57 +4,40 @@
       "title": "IT Administrator & Course Facilitator",
       "company": "BSG and Technologies",
       "period": "Feb 2025 – Present",
-      "location": "Johannesburg, South Africa",
-      "type": "full-time",
       "responsibilities": [
-        "Configured, customized, and maintained WordPress sites for staff and students, including plugin setups, theme management, and site optimization.",
-        "Set up and managed CMS and LMS platforms, supporting course delivery, student and learner administration, and user access.",
-        "Integrated APIs and ePayment solutions, and implemented security best practices for web platforms.",
-        "Utilized SEO tools and marketing plugins to improve site visibility and engagement.",
-        "Provided ticket support and technical assistance for users, ensuring prompt resolution and clear communication.",
-        "Documented processes, solutions, and platform configurations to support team knowledge and continuity.",
-        "Remained versatile and proactive in learning new technologies and tools to expand my capabilities."
+        "Configured and maintained CMS/LMS platforms, PHP and MySQL databases.",
+        "Integrated APIs, managed ePayment solutions, and implemented security best practices.",
+        "Provided technical support and documented solutions for users.",
+        "Proactive in learning new technologies and expanding capabilities.",
+        "Co-developed online learning platform and trained students on Coding and Robotics."
       ]
-        ,
-        "note": "In addition to my IT administration duties, I have extensive experience building and maintaining WordPress sites, integrating APIs, and managing MySQL databases. I use Git daily for version control and am confident managing Linux servers for hosting and deployment. While I am still learning advanced PHP and frameworks like CakePHP, my strong problem-solving skills and ability to learn quickly allow me to deliver reliable results and adapt to new challenges."
     },
     {
-  "title": "IT Support Technician",
+      "title": "IT Support Technician",
       "company": "del IT & Web",
       "period": "April 2022 – Feb 2025",
-      "location": "Johannesburg & Durban, South Africa",
-      "type": "business",
       "responsibilities": [
-        "Worked as a freelance IT support technician for small businesses, providing troubleshooting for network, wireless, and VOIP issues.",
-        "Configured and maintained Linux servers, Windows systems, and cloud services.",
-        "Set up and managed routing and switching, VPNs, and firewall rules for secure client networks.",
-        "Documented faults, solutions, and follow-ups for clients.",
-        "While I am new to some phone systems and PABX, my strong troubleshooting skills and willingness to learn help me adapt quickly."
+        "Provided IT support solutions to small businesses and independent personnel.",
+        "Configured workstations, servers, and cloud solutions across various operating systems.",
+        "Ensured adherence to key security protocols, set up VPNs, firewalls, etc."
       ]
     },
     {
-  "title": "Private Tutor",
-  "company": "",
-      "period": "February 2016 – March 2022",
-      "location": "Johannesburg & Durban, South Africa",
-      "type": "part-time",
+      "title": "Private Tutor",
+      "company": "",
+      "period": "February 2012 – March 2022",
       "responsibilities": [
-        "Provided academic support in Mathematics and Sciences to high school and college students",
-        "Built strong client relationships and improved learning outcomes through personalized strategies",
-        "Developed learner-centred schedules and progress tracking systems"
+        "Tutored Mathematics and Sciences to high school and college students.",
+        "Developed personalized learning strategies and progress tracking."
       ]
     },
     {
       "title": "Educator & ICT Lab Assistant",
       "company": "Kwa-Giba High School",
       "period": "April 2009 – December 2012",
-      "location": "Hluhluwe, South Africa",
-      "type": "full-time",
       "responsibilities": [
-        "Supported ICT Department and coordinated lab activities",
-        "Installed and maintained lab hardware and software",
-        "Ensured secure systems through antivirus deployment, firewall setup, and user access controls",
-        "Delivered full-time classroom teaching in Mathematics and Sciences"
+        "Assisted ICT Department and maintained lab hardware/software.",
+        "Delivered classroom teaching in Mathematics and Sciences."
       ]
     }
   ]

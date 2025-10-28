@@ -5,51 +5,22 @@
       "backend": ["Node.js", "Express.js", "PHP"],
       "databases": ["MongoDB Atlas", "SQL", "MySQL"]
     },
-    "web_technologies": {
-      "cms": ["WordPress", "Headless CMS", "Custom Post Types"],
-      "tools": ["Elementor", "Tutor LMS", "SEO Tools", "Git"],
-      "seo": ["Yoast", "Rank Math", "Google Analytics", "Search Console"]
-    },
     "infrastructure": {
-      "operating_systems": ["Windows 7-11", "Windows Server", "Ubuntu Linux", "macOS", "Proxmox (learning)"],
-      "cloud": ["Azure", "GCP", "DNS", "VMs", "IAM"],
-      "networking": ["TCP/IP", "LAN/WAN", "VoIP", "Mikrotik (VPN, routing, firewall)", "OSPF", "RSTP", "VTP", "Wireless (Unifi, TP-Link Omada, Cambium, UBNT)", "PABX (learning)", "3CX (learning)", "Yealink (learning)", "Grandstream (learning)", "Gigaset (learning)", "Snom (learning)", "VPN Protocols (L2TP, PPTP, IPsec)", "Advanced troubleshooting"],
-      "security": ["Firewalls (FortiGate, Sophos - learning)", "VPNs", "RBAC", "MFA", "Network Security"]
+      "operating_systems": ["Windows", "macOS", "Ubuntu Linux"],
+      "networking": ["TCP/IP", "Routing & Switching", "LAN/WLAN", "VoIP", "VPN", "Firewalls"]
     },
-    "design_tools": ["Photoshop", "GIMP", "Affinity Photo"],
-    "deployment": ["Vercel", "Render", "GitHub integration", "Linux server management"]
+    "cms_tools": {
+      "cms": ["WordPress", "Headless CMS", "Custom Post Types", "SEO Tools"],
+      "design": ["Photoshop", "GIMP", "Elementor"]
+    }
   },
   "certifications": [
-    {
-      "name": "Adaptability & Fast Learning",
-      "year": "Ongoing",
-      "issuer": "Self-driven"
-    },
-    {
-      "name": "CompTIA A+",
-      "year": "2021-2024",
-      "issuer": "CompTIA"
-    },
-    {
-      "name": "CompTIA Network+",
-      "year": "2021-2024", 
-      "issuer": "CompTIA"
-    },
-    {
-      "name": "CompTIA Security+",
-      "year": "2021-2024",
-      "issuer": "CompTIA"
-    },
-    {
-      "name": "Cisco CCNA",
-      "year": "2021-2024",
-      "issuer": "Cisco"
-    },
-    {
-      "name": "Kubernetes LFS250, KCNA",
-      "year": "2024",
-      "issuer": "Linux Foundation"
-    }
+    { "name": "Adaptability & Fast Learning", "year": "Ongoing", "issuer": "Self-driven" },
+    { "name": "CompTIA A+", "year": "2021-2024", "issuer": "CompTIA" },
+    { "name": "CompTIA Network+", "year": "2021-2024", "issuer": "CompTIA" },
+    { "name": "CompTIA Security+", "year": "2021-2024", "issuer": "CompTIA" },
+    { "name": "Cisco CCNA", "year": "2021-2024", "issuer": "Cisco" },
+    { "name": "Kubernetes LFS250, KCNA", "year": "2024", "issuer": "Linux Foundation" }
   ],
   "education": [
     {
@@ -67,16 +38,16 @@
   ],
   "notes": "While I am new to Proxmox, 3CX, and some phone systems, my experience with Linux, Windows Server, Mikrotik, and troubleshooting a wide range of network and VOIP issues means I can learn these quickly. I am committed to excellent communication, documentation, and continuous learning to support both customers and teams.",
   "languages": [
-    {"language": "English", "level": "Fluent"},
-    {"language": "isiZulu", "level": "Conversational"},
-    {"language": "French", "level": "Conversational"}
-    ],
-    "php_stack": {
-      "php": "Familiar with PHP basics, actively learning advanced concepts and frameworks (CakePHP, Laravel). Strong ability to master new tools quickly.",
-      "wordpress": "Extensive experience building, customizing, and maintaining WordPress sites, including custom themes, plugins, and efficient builds.",
-      "mysql": "Proficient in MySQL database design, optimization, and troubleshooting.",
-      "api_integration": "Skilled in integrating REST APIs with WordPress and custom solutions.",
-      "git": "Daily use of Git for version control and collaboration.",
-      "linux_server_management": "Confident managing Linux servers for hosting, deployment, and troubleshooting."
-    }
+    { "language": "English", "level": "Fluent" },
+    { "language": "isiZulu", "level": "Conversational" },
+    { "language": "French", "level": "Conversational" }
+  ],
+  "php_stack": {
+    "php": "Familiar with PHP basics, actively learning advanced concepts and frameworks (CakePHP, Laravel). Strong ability to master new tools quickly.",
+    "wordpress": "Extensive experience building, customizing, and maintaining WordPress sites, including custom themes, plugins, and efficient builds.",
+    "mysql": "Proficient in MySQL database design, optimization, and troubleshooting.",
+    "api_integration": "Skilled in integrating REST APIs with WordPress and custom solutions.",
+    "git": "Daily use of Git for version control and collaboration.",
+    "linux_server_management": "Confident managing Linux servers for hosting, deployment, and troubleshooting."
+  }
 }
