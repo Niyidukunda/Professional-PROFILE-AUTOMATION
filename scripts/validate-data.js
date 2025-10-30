@@ -1,22 +1,19 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 // Validation functions
 function validatePersonal(data) {
     const required = ['name', 'phone', 'email', 'title', 'summary'];
     const errors = [];
-    
     required.forEach(field => {
         if (!data[field]) {
             errors.push(`Personal data missing required field: ${field}`);
         }
     });
-    
     // Email validation
     if (data.email && !/\S+@\S+\.\S+/.test(data.email)) {
         errors.push('Invalid email format');
     }
-    
     return errors;
 }
 
@@ -82,8 +79,6 @@ function validateSkills(data) {
     
     return errors;
 }
-
-// Main validation function
 function validateAllData() {
     console.log('🔍 Validating data files...\n');
     
@@ -118,7 +113,6 @@ function validateAllData() {
                 errors.forEach(error => console.log(`   - ${error}`));
                 totalErrors += errors.length;
             }
-            
         } catch (error) {
             console.log(`❌ ${fileName}.json: File error - ${error.message}`);
             totalErrors++;
@@ -136,8 +130,8 @@ function validateAllData() {
 }
 
 // Run validation
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}`) {
     validateAllData();
 }
 
-module.exports = { validateAllData };
+export { validateAllData };

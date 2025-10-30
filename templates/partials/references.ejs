@@ -1,0 +1,14 @@
+<div class="section" style="margin-bottom:2.5rem;">
+    <div class="section-title">References</div>
+    <% if (references && references.length) { %>
+        <% references.forEach(function(ref) { %>
+            <div class="reference-item">
+                <strong><%= ref.name %></strong> – <%= ref.title %><br>
+                <% if (ref.phone) { %>Phone: <%= ref.phone %><% } %>
+                <% if (ref.email) { %><br>Email: <%= ref.email %><% } %>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>No references available.</p>
+    <% } %>
+</div>

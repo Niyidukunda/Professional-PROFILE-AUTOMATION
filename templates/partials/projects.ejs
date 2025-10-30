@@ -1,0 +1,29 @@
+<div class="section">
+    <div class="section-title">Featured Projects</div>
+    <% if (featured_projects && featured_projects.length) { %>
+        <% featured_projects.forEach(function(project) { %>
+            <div class="project-card">
+                <div class="project-title"><%= project.name %></div>
+                <p><%= project.description %></p>
+                <p><strong>Technologies:</strong> <%= project.technologies.join(', ') %></p>
+                <% if (project.highlights && project.highlights.length) { %>
+                    <ul>
+                        <% project.highlights.forEach(function(highlight) { %>
+                            <li><%= highlight %></li>
+                        <% }); %>
+                    </ul>
+                <% } %>
+                <div class="project-links">
+                    <% if (project.repository) { %>
+                        <a href="<%= project.repository %>" target="_blank">View Code</a>
+                    <% } %>
+                    <% if (project.live_url) { %>
+                        <a href="<%= project.live_url %>" target="_blank">Live Demo</a>
+                    <% } %>
+                </div>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>No featured projects available.</p>
+    <% } %>
+</div>

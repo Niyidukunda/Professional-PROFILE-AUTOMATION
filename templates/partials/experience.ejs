@@ -1,0 +1,18 @@
+<div class="section">
+    <div class="section-title">Work Experience</div>
+    <% if (work_experience && work_experience.length) { %>
+        <% work_experience.forEach(function(job) { %>
+            <div class="job">
+                <div class="job-header"><%= job.title %> – <%= job.company %></div>
+                <div class="job-details"><%= job.period %></div>
+                <ul class="responsibilities">
+                    <% job.responsibilities.forEach(function(resp) { %>
+                        <li><%= resp %></li>
+                    <% }); %>
+                </ul>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>No work experience available.</p>
+    <% } %>
+</div>

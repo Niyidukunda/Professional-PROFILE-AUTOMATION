@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 // Load all data files
 function loadData() {
@@ -168,8 +168,8 @@ function generateCV() {
 }
 
 // Run the generator
-if (require.main === module) {
+if (import.meta.url === `file://${process.argv[1]}` || import.meta.url === `file:///${process.argv[1]}`) {
     generateCV();
 }
 
-module.exports = { generateCV, loadData };
+export { generateCV, loadData };

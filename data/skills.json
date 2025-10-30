@@ -1,27 +1,33 @@
 {
   "technical_skills": {
-    "programming": {
-      "frontend": ["HTML", "CSS", "JavaScript", "React", "EJS", "Tailwind CSS"],
-      "backend": ["Node.js", "Express.js", "PHP"],
-      "databases": ["MongoDB Atlas", "SQL", "MySQL"]
+     "web_development": {
+      "tools": ["CMS platforms", "Modern JavaScript frameworks", "Server-side scripting",
+       "Templating engines"]
+     },
+      "databases":{
+        "tools": ["MongoDB","PostgreSQL","MySQL","SQL"]
+     },
+    "version_control_automation": {
+      "tools": ["Git", "GitHub Actions", "JSON workflows", "CI/CD pipelines"]
     },
-    "infrastructure": {
-      "operating_systems": ["Windows", "macOS", "Ubuntu Linux"],
-      "networking": ["TCP/IP", "Routing & Switching", "LAN/WLAN", "VoIP", "VPN", "Firewalls"]
+    "infrastructure_networking": {
+      "tools": ["Server,Network VLAN/WLAN administration","Active Directory-UAC", 
+                 "Routing & Switching","CLI tools","Web servers (Nginx, Apache)",
+                "Network simulation (Packet Tracer, GNS3)"
+               ]
     },
-    "cms_tools": {
-      "cms": ["WordPress", "Headless CMS", "Custom Post Types", "SEO Tools"],
-      "design": ["Photoshop", "GIMP", "Elementor"]
+    "API integration": {
+      "tools": ["RESTful services", "Third-party integrations", "Secure credential management"]
     }
   },
+
   "certifications": [
-    { "name": "Adaptability & Fast Learning", "year": "Ongoing", "issuer": "Self-driven" },
-    { "name": "CompTIA A+", "year": "2021-2024", "issuer": "CompTIA" },
-    { "name": "CompTIA Network+", "year": "2021-2024", "issuer": "CompTIA" },
-    { "name": "CompTIA Security+", "year": "2021-2024", "issuer": "CompTIA" },
-    { "name": "Cisco CCNA", "year": "2021-2024", "issuer": "Cisco" },
-    { "name": "Kubernetes LFS250, KCNA", "year": "2024", "issuer": "Linux Foundation" }
-  ],
+     { "name": "Cisco CCNA", "year": "2024-2027" },
+     { "name": "CompTIA Security+", "year": "2023-2026"},
+     { "name": "Kubernetes LFS250, KCNA", "year": "2025"},
+     { "name": "CompTIA A+", "year": "2021-2024"},
+     { "name": "CompTIA Network+", "year": "2021-2024"}
+                ],
   "education": [
     {
       "degree": "S4-Ndip Electronic Engineering",
@@ -35,19 +41,6 @@
       "period": "2004",
       "status": "Completed"
     }
-  ],
-  "notes": "While I am new to Proxmox, 3CX, and some phone systems, my experience with Linux, Windows Server, Mikrotik, and troubleshooting a wide range of network and VOIP issues means I can learn these quickly. I am committed to excellent communication, documentation, and continuous learning to support both customers and teams.",
-  "languages": [
-    { "language": "English", "level": "Fluent" },
-    { "language": "isiZulu", "level": "Conversational" },
-    { "language": "French", "level": "Conversational" }
-  ],
-  "php_stack": {
-    "php": "Familiar with PHP basics, actively learning advanced concepts and frameworks (CakePHP, Laravel). Strong ability to master new tools quickly.",
-    "wordpress": "Extensive experience building, customizing, and maintaining WordPress sites, including custom themes, plugins, and efficient builds.",
-    "mysql": "Proficient in MySQL database design, optimization, and troubleshooting.",
-    "api_integration": "Skilled in integrating REST APIs with WordPress and custom solutions.",
-    "git": "Daily use of Git for version control and collaboration.",
-    "linux_server_management": "Confident managing Linux servers for hosting, deployment, and troubleshooting."
-  }
+  ]
+
 }

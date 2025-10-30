@@ -9,7 +9,7 @@
         "Single source of truth architecture: Update once, deploy everywhere",
         "Automated CV generation with responsive HTML design and LinkedIn optimization",
         "GitHub Actions workflow for continuous integration and deployment",
-        "Amateur-friendly documentation with 60%+ success rate for new users",
+        "Amateur-friendly documentation for new users",
         "Demonstrates technical skills while solving real-world professional needs"
       ]
     },
@@ -38,19 +38,20 @@
       ]
     },
     {
-      "name": "Learning Management Systems",
-      "description": "Educational platforms with course management and student progress tracking",
+      "name": " WeatherApp – ",
+      "description": "Full-stack app deployed on Vercel with Axios integration and modular EJS structure  ",
       "technologies": ["WordPress", "Tutor LMS", "Educational Technology"],
-      "highlights": [
-        "Supporting 50+ students in remote and underserved backgrounds",
-        "Real-time user feedback integration",
-        "Offline/online sync capabilities"
-      ]
+      "repository": "https://github.com/niyidukunda/WeatherApp",
+      "live_url": "https://del-live-weather.vercel.app/",
+      "highlights": ["Modular Express.js structure with reusable UI components",
+                      "Real-time weather lookup via API",
+                      "Deployed on Vercel with environment variables"
+                    ]
     },
     {
       "name": "Kubernetes Learning Journey",
       "description": "Hands-on learning journal documenting containerization and orchestration exploration",
-      "technologies": ["Kubernetes", "Docker", "Linux", "DevOps"],
+      "technologies": ["Node.js", "Express", "EJS", "Axios", "Vercel"],
       "repository": "https://github.com/Niyidukunda/kubernetes-learning-journal",
       "highlights": [
         "Complete setup guides for Minikube and kubectl",

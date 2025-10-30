@@ -3,235 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fidel Niyidukunda - Technologist & IT Support Specialist Professional CV">
+    <meta name="author" content="Fidel Niyidukunda">
+    <meta property="og:title" content="Fidel Niyidukunda - Professional CV">
+    <meta property="og:description" content="Technologist & IT Support Specialist - View my professional experience and skills">
     <title>Fidel Niyidukunda - CV</title>
     <style>
-        .featured-projects-section {
-            background: #f7f9fc;
-            border-radius: 6px;
-            padding: 24px 24px 8px 24px;
-            margin-bottom: 24px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            font-size: 12pt;
-            color: #222;
-            background: #fff;
-            margin: 0;
-            padding: 0;
-            line-height: 1.7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 2cm;
+            background: white;
         }
-        .container {
-            max-width: 900px;
-            margin: 48px auto;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            padding: 40px 56px;
-            border-radius: 10px;
-        }
+        
         .header {
             text-align: center;
-            margin-bottom: 24px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
         }
-        .name {
-            font-size: 1.5em;
-            font-weight: bold;
-            letter-spacing: 1px;
+        
+        .name { 
+            font-size: 2rem; 
+            font-weight: bold; 
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
         }
+        
         .contact-info {
-            margin-top: 8px;
-            font-size: 1em;
+            font-size: 0.85rem;
+            color: #555;
+            line-height: 1.8;
         }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
         .section {
-            margin-bottom: 24px;
+            margin-bottom: 2rem;
         }
+        
         .section-title {
+            font-size: 1.1rem;
             font-weight: bold;
-            font-size: 1.1em;
-            color: #222;
-            margin-bottom: 8px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 2px;
+            color: #2c3e50;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
-        .job-header, .project-title {
+        
+        .job {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-header {
             font-weight: bold;
-            margin-top: 8px;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
         }
+        
         .job-details {
+            color: #7f8c8d;
             font-style: italic;
-            margin-bottom: 4px;
+            margin-bottom: 0.5rem;
         }
-        ul.responsibilities, ul {
-            margin-left: 24px;
+        
+        .responsibilities {
+            list-style: none;
             padding-left: 0;
         }
+        
+        .responsibilities li {
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .responsibilities li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
         .project-card {
-            margin-bottom: 16px;
+            background: #f8f9fa;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
         }
-        .project-links {
-            margin-top: 4px;
-            font-size: 0.95em;
+        
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
         }
-        .skills-list, .cert-list, .lang-list, .ref-list {
-            margin-left: 24px;
+        
+        .project-links a {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 0.7em;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
         }
-        .notes {
-            font-style: italic;
-            color: #444;
+        
+        .cert-item {
+            margin-bottom: 0.5rem;
         }
+        
+        .cert-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .education-item {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid #bdc3c7;
+            color: #7f8c8d;
+            font-size: 0.8rem;
+        }
+        
         @media print {
             body { padding: 1cm; }
+            .footer { display: none; }
         }
+        
         @media (max-width: 768px) {
             body { padding: 1rem; }
             .name { font-size: 2rem; }
+            .skills-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-<div class="container">
-        <div class="header">
-            <div class="name">Fidel Niyidukunda</div>
-            <div class="contact-info">
-                +27 67 718 8232 | <a href="mailto:finiyid@gmail.com">finiyid@gmail.com</a><br>
-                Location: Johannesburg, South Africa<br>
-                Website: <a href="https://fidel-devprojects.vercel.app/" target="_blank">https://fidel-devprojects.vercel.app/</a><br>
-                GitHub: <a href="https://github.com/Niyidukunda" target="_blank">https://github.com/Niyidukunda</a><br>
-                LinkedIn: <a href="https://www.linkedin.com/in/niyidukunda/" target="_blank">https://www.linkedin.com/in/niyidukunda/</a><br>
-            </div>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="name">Fidel Niyidukunda</div>
+        <div class="contact-info">
+            +27 67 718 8232 | finiyid@gmail.com<br>
+            <a href="https://fidel-devprojects.vercel.app/" target="_blank">https://fidel-devprojects.vercel.app/</a> | 
+            <a href="https://github.com/Niyidukunda" target="_blank">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/niyidukunda/" target="_blank">LinkedIn</a><br>
+            Johannesburg, South Africa
         </div>
-        <!-- Professional Summary -->
-        <div class="section">
-            <div class="section-title">Professional Summary</div>
-                <p>I am a versatile technologist with hands-on experience across web development, IT support, and automation. My toolkit spans CMS, PHP, MySQL, Node.js, React, and API integration, as well as system infrastructure networking, troubleshooting, and server management. I enjoy building solutions that are robust, scalable, and user-focused—whether developing custom web applications, optimizing cloud deployments, or troubleshooting complex network issues. I am comfortable learning new frameworks and tools, and I thrive in environments where adaptability, clear communication, and ownership are valued. My approach is practical and collaborative: sharing knowledge and delivering results that make a real impact, regardless of the technology stack.</p>
-        </div>
-        <!-- Work Experience -->
-        <div class="section">
-            <div class="section-title">Work Experience</div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>I am a versatile technologist with hands-on experience in web development, IT support, and automation. My toolkit spans modern frameworks, databases, and integration methods, alongside infrastructure design, network administration, and server operations. Certified in CompTIA and Cisco, I build scalable, user-focused solutions—from custom applications to cloud optimization and complex network troubleshooting. I thrive in environments that value adaptability, clear communication, and ownership. My approach is practical and collaborative: I share knowledge, embrace new tools, and deliver results that make a real impact—regardless of the technology stack.</p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        
             <div class="job">
-                <div class="job-header">IT Administrator &amp; Course Facilitator – BSG and Technologies</div>
+                <div class="job-header">IT Administrator & Course Facilitator – BSG and Technologies</div>
                 <div class="job-details">Feb 2025 – Present</div>
                 <ul class="responsibilities">
-                    <li>Configured and maintained CMS/LMS platforms, PHP and MySQL databases.</li>
-                    <li>Integrated APIs, managed ePayment solutions, and implemented security best practices.</li>
-                    <li>Provided technical support and documented solutions for users.</li>
-                    <li>Proactively learned new technologies and expanded capabilities.</li>
-                    <li>Co-developed an online learning platform and trained students in coding and robotics.</li>
+                    <li>Configured and maintained CMS/LMS platforms, PHP and MySQL databases.</li><li>Integrated APIs, managed ePayment solutions, and implemented security best practices.</li><li>Provided technical support and documented solutions for users.</li><li>Proactive in learning new technologies and expanding capabilities.</li><li>Co-developed online learning platform and trained students on Coding and Robotics.</li>
                 </ul>
             </div>
+        
             <div class="job">
-                <div class="job-header">IT Support Technician – del IT &amp; Web</div>
+                <div class="job-header">IT Support Technician – del IT & Web</div>
                 <div class="job-details">April 2022 – Feb 2025</div>
                 <ul class="responsibilities">
-                    <li>Provided IT support solutions to small businesses and individual professionals.</li>
-                    <li>Configured workstations, servers, and cloud solutions across various operating systems.</li>
-                    <li>Ensured adherence to key security protocols, set up VPNs, firewalls, etc.</li>
+                    <li>Provided IT support solutions to small businesses and individual professionals.</li><li>Configured workstations, servers, and cloud solutions across various operating systems.</li><li>Ensured adherence to key security protocols, set up VPNs, firewalls, etc.</li>
                 </ul>
             </div>
+        
             <div class="job">
-                <div class="job-header">Private Tutor</div>
+                <div class="job-header">Private Tutor – </div>
                 <div class="job-details">February 2012 – March 2022</div>
                 <ul class="responsibilities">
-                    <li>Tutored Mathematics and Sciences to high school and college students.</li>
-                    <li>Developed personalized learning strategies and progress tracking.</li>
+                    <li>Tutored Mathematics and Sciences to high school and college students.</li><li>Developed personalized learning strategies and progress tracking.</li>
                 </ul>
             </div>
+        
             <div class="job">
-                <div class="job-header">Educator &amp; ICT Lab Assistant – Kwa-Giba High School</div>
+                <div class="job-header">Educator & ICT Lab Assistant – Kwa-Giba High School</div>
                 <div class="job-details">April 2009 – December 2012</div>
                 <ul class="responsibilities">
-                    <li>Assisted ICT Department and maintained lab hardware/software.</li>
-                    <li>Delivered classroom teaching in Mathematics and Sciences.</li>
+                    <li>Assisted ICT Department and maintained lab hardware/software.</li><li>Delivered classroom teaching in Mathematics and Sciences.</li>
                 </ul>
             </div>
-        </div>
-        <!-- Featured Projects -->
-        <div class="section featured-projects-section">
-            <div class="section-title">Featured Projects</div>
+        
+    </div>
+
+    <!-- Featured Projects -->
+    <div class="section">
+        <div class="section-title">Featured Projects</div>
+        
             <div class="project-card">
                 <div class="project-title">Professional Profile Automation System</div>
                 <p>Legendary automation system with GitHub as single source of truth for managing professional materials across platforms</p>
-                <div><strong>Technologies:</strong> Node.js, GitHub Actions, JSON, HTML/CSS, Git, Automation</div>
-                <div><strong>Highlights:</strong>
-                    <ul>
-                        <li>Single source of truth architecture: Update once, deploy everywhere</li>
-                        <li>Automated CV generation with responsive HTML design and LinkedIn optimization</li>
-                        <li>GitHub Actions workflow for continuous integration and deployment</li>
-                        <li>Demonstrates technical skills while solving real-world professional needs</li>
-                    </ul>
+                <p><strong>Technologies:</strong> Node.js, GitHub Actions, JSON, HTML/CSS, Git, Automation</p>
+                <div class="project-links">
+                    <a href="https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION" target="_blank">View Code</a><br><span style="font-size:0.8em; color:#555; word-break:break-all;">https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION</span>
+                    
                 </div>
-                <div class="project-links">Repository: <a href="https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION" target="_blank">https://github.com/Niyidukunda/Professional-PROFILE-AUTOMATION</a></div>
             </div>
+        
             <div class="project-card">
                 <div class="project-title">Personal Live Blog</div>
                 <p>Full-stack blog application with intelligent fallback systems and comprehensive security features</p>
-                <div><strong>Technologies:</strong> Node.js, Express, MongoDB, EJS, Security Implementation</div>
+                <p><strong>Technologies:</strong> Node.js, Express, MongoDB, EJS, Security Implementation</p>
                 <div class="project-links">
-                    Repository: <a href="https://github.com/Niyidukunda/express-blog-app" target="_blank">https://github.com/Niyidukunda/express-blog-app</a><br>
-                    Live URL: <a href="https://express-blog-app-dlul.onrender.com/" target="_blank">https://express-blog-app-dlul.onrender.com/</a>
+                    <a href="https://github.com/Niyidukunda/express-blog-app" target="_blank">View Code</a><br><span style="font-size:0.8em; color:#555; word-break:break-all;">https://github.com/Niyidukunda/express-blog-app</span>
+                    <a href="https://express-blog-app-dlul.onrender.com/" target="_blank">Live Demo</a>
                 </div>
             </div>
+        
             <div class="project-card">
                 <div class="project-title">Floral Kingdom Tours</div>
                 <p>Headless CMS tourism platform with React frontend and WordPress backend</p>
-                <div><strong>Technologies:</strong> React, WordPress, Tailwind CSS, Vercel, REST API</div>
+                <p><strong>Technologies:</strong> React, WordPress, Tailwind CSS, Vercel, REST API</p>
                 <div class="project-links">
-                    Repository: <a href="https://github.com/Niyidukunda/floral-kingdom-tours" target="_blank">https://github.com/Niyidukunda/floral-kingdom-tours</a><br>
-                    Live URL: <a href="https://floral-kingdom-tours.vercel.app" target="_blank">https://floral-kingdom-tours.vercel.app</a>
+                    <a href="https://github.com/Niyidukunda/floral-kingdom-tours" target="_blank">View Code</a><br><span style="font-size:0.8em; color:#555; word-break:break-all;">https://github.com/Niyidukunda/floral-kingdom-tours</span>
+                    <a href="https://floral-kingdom-tours.vercel.app" target="_blank">Live Demo</a>
                 </div>
             </div>
+        
             <div class="project-card">
-                <div class="project-title">Learning Management Systems</div>
-                <p>Educational platforms with course management and student progress tracking</p>
-                <div><strong>Technologies:</strong> WordPress, Tutor LMS, Educational Technology</div>
+                <div class="project-title"> WeatherApp – </div>
+                <p>Full-stack app deployed on Vercel with Axios integration and modular EJS structure  </p>
+                <p><strong>Technologies:</strong> WordPress, Tutor LMS, Educational Technology</p>
+                <div class="project-links">
+                    <a href="https://github.com/niyidukunda/WeatherApp" target="_blank">View Code</a><br><span style="font-size:0.8em; color:#555; word-break:break-all;">https://github.com/niyidukunda/WeatherApp</span>
+                    <a href="https://del-live-weather.vercel.app/" target="_blank">Live Demo</a>
+                </div>
             </div>
+        
             <div class="project-card">
                 <div class="project-title">Kubernetes Learning Journey</div>
                 <p>Hands-on learning journal documenting containerization and orchestration exploration</p>
-                <div><strong>Technologies:</strong> Kubernetes, Docker, Linux, DevOps</div>
+                <p><strong>Technologies:</strong> Node.js, Express, EJS, Axios, Vercel</p>
                 <div class="project-links">
-                    Repository: <a href="https://github.com/Niyidukunda/kubernetes-learning-journal" target="_blank">https://github.com/Niyidukunda/kubernetes-learning-journal</a>
+                    <a href="https://github.com/Niyidukunda/kubernetes-learning-journal" target="_blank">View Code</a><br><span style="font-size:0.8em; color:#555; word-break:break-all;">https://github.com/Niyidukunda/kubernetes-learning-journal</span>
+                    
                 </div>
             </div>
+        
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category"><h4>Web Development</h4><p>Tools: CMS platforms, Modern JavaScript frameworks, Server-side scripting, Templating engines</p></div>
+            <div class="skill-category"><h4>Databases</h4><p>Tools: MongoDB, PostgreSQL, MySQL, SQL</p></div>
+            <div class="skill-category"><h4>Version Control & Automation</h4><p>Tools: Git, GitHub Actions, JSON workflows, CI/CD pipelines</p></div>
+            <div class="skill-category"><h4>Infrastructure & Networking</h4><p>Tools: Server,Network VLAN/WLAN administration, Active Directory-UAC, Routing & Switching, CLI tools, Web servers (Nginx, Apache), Network simulation (Packet Tracer, GNS3)</p></div>
+            <div class="skill-category"><h4>API Integration</h4><p>Tools: RESTful services, Third-party integrations, Secure credential management</p></div>
         </div>
-        <!-- Technical Skills -->
-        <div class="section">
-            <div class="section-title">Technical Skills</div>
-            <div class="skills-list">
-                <strong>Programming:</strong>JavaScript, React, EJS, Tailwind CSS, Node.js, Express.js, PHP, MongoDB Atlas, SQL, MySQL<br>
-                <strong>Infrastructure:</strong> Windows, macOS, Ubuntu Linux, TCP/IP, Routing &amp; Switching, LAN/WLAN, VoIP, VPN, Firewalls<br>
-                <strong>CMS and Design Tools:</strong> WordPress, Headless CMS, SEO Tools, Photoshop, GIMP, Elementor
+    </div>
+
+    <!-- Education & Certifications -->
+    <div class="section">
+        <div class="section-title">Education & Certifications</div>
+        
+            <div class="cert-item">
+                <span class="cert-name">Cisco CCNA</span> (2024-2027)
             </div>
-        </div>
-        <!-- Education & Certifications -->
-        <div class="section">
-            <div class="section-title">Education &amp; Certifications</div>
-            <div class="cert-list">
-                <strong>(2021–2024): Professional Certifications:</strong> Cisco CCNA, Security+, Network+, A+, Kubernetes KCNA,<br>
-                <strong>(2012–2015): S4 Electronic Engineering</strong> (Pending In-service Training): Durban University of Technology<br>
-                <strong>(2001-2004): High School Certificate:</strong> Command Secondary School  (Matric)
+        
+            <div class="cert-item">
+                <span class="cert-name">CompTIA Security+</span> (2023-2026)
             </div>
-        </div>
-		<br>
-        <!-- References -->
-        <div class="section">
-            <div class="section-title">References</div>
-            <div class="ref-list">
+        
+            <div class="cert-item">
+                <span class="cert-name">Kubernetes LFS250, KCNA</span> (2025)
+            </div>
+        
+            <div class="cert-item">
+                <span class="cert-name">CompTIA A+</span> (2021-2024)
+            </div>
+        
+            <div class="cert-item">
+                <span class="cert-name">CompTIA Network+</span> (2021-2024)
+            </div>
+        
+        
+                <div class="education-item">
+                    <div class="cert-name">Durban University of Technology (2012-2015)</div>
+                    <div>S4-Ndip Electronic Engineering (Pending - In-service Training)</div>
+                </div>
+            
+                <div class="education-item">
+                    <div class="cert-name">Command Secondary School (2004)</div>
+                    <div>National Certificate (Matric) (Completed)</div>
+                </div>
+            
+    </div>
+
+    <!-- References -->
+    <div class="section">
+        <div class="section-title">References</div>
+        
+            <div class="reference-item">
                 <strong>Thando B. Gumede</strong> – CEO, BSG and Technologies | Alumni of KwaGiba High School 2009<br>
-                Phone: +27 62 640 2403<br><br>
-                <strong>Mr. Saneliso S. Mafuleka</strong> – Supervising Manager &amp; Co-facilitator: BSG and Technologies<br>
-                Phone: +27 72 344 6738<br><br>
-                <strong>Casper Chitepo</strong> – Director, Africa College of Technology<br>
-                Phone: +27 73 315 4738<br>
-                Email: casper@africact.co.za
+                Phone: +27 62 640 2403
+                
             </div>
-        </div>
-        <!-- Footer -->
-        <div style="text-align: center; margin-top: 2rem; color: #7f8c8d; font-size: 0.9rem;">
-            This CV was designed and is maintained by myself through a professional profile automation system using Git and CI/CD workflows.<br>
-            For the most current version, visit this URL directly:<br>
-            <a href="https://niyidukunda.github.io/Professional-PROFILE-AUTOMATION/" style="color:#3498db;word-break:break-all;" target="_blank">https://niyidukunda.github.io/Professional-PROFILE-AUTOMATION/</a><br>
-            <span style="font-size:0.85em;">Last updated: October 2025</span>
-        </div>
+        
+            <div class="reference-item">
+                <strong>Mr. Saneliso S. Mafuleka</strong> – Supervising Manager & Co-facilitator: BSG and Technologies<br>
+                Phone: +27 72 344 6738
+                
+            </div>
+        
+            <div class="reference-item">
+                <strong>Casper Chitepo</strong> – Director, Africa College of Technology<br>
+                Phone: +27 73 315 4738
+                <br>Email: casper@africact.co.za
+            </div>
+        
+    </div>
+    
+    <div class="footer">
+        This CV is automatically generated and maintained through a professional profile automation system.<br>
+        For the most current version, visit this URL directly.
     </div>
 </body>
 </html>

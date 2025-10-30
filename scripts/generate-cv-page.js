@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 function generateStandaloneCVPage() {
     // Ensure docs directory exists
@@ -21,6 +21,7 @@ function generateStandaloneCVPage() {
     const skills = JSON.parse(fs.readFileSync('data/skills.json', 'utf8'));
     
     const data = { ...personal, ...experience, ...projects, ...skills };
+    console.log('🔍 Loaded data for index.html:', JSON.stringify(data, null, 2));
     
     // Generate standalone CV HTML
     const standaloneCVHTML = `<!DOCTYPE html>
@@ -54,14 +55,14 @@ function generateStandaloneCVPage() {
         }
         
         .name { 
-            font-size: 2.5rem; 
+            font-size: 2rem; 
             font-weight: bold; 
             color: #2c3e50;
             margin-bottom: 0.5rem;
         }
         
         .contact-info {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: #555;
             line-height: 1.8;
         }
@@ -76,7 +77,7 @@ function generateStandaloneCVPage() {
         }
         
         .section-title {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: #2c3e50;
             border-bottom: 1px solid #bdc3c7;
@@ -156,7 +157,7 @@ function generateStandaloneCVPage() {
             padding: 0.3rem 0.8rem;
             border-radius: 3px;
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.7em;
             margin-right: 0.5rem;
             margin-top: 0.5rem;
         }
@@ -180,12 +181,11 @@ function generateStandaloneCVPage() {
             margin-top: 2rem;
             border-top: 1px solid #bdc3c7;
             color: #7f8c8d;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
         
         @media print {
             body { padding: 1cm; }
-            .project-links { display: none; }
             .footer { display: none; }
         }
         
@@ -201,11 +201,11 @@ function generateStandaloneCVPage() {
     <div class="header">
         <div class="name">${data.name}</div>
         <div class="contact-info">
-            ${data.phone} | ${data.email}<br>
+            ${data.phone ? data.phone : ''} | ${data.email ? data.email : ''}<br>
             ${data.website ? `<a href="${data.website}" target="_blank">${data.website}</a> | ` : ''}
             ${data.github ? `<a href="${data.github}" target="_blank">GitHub</a>` : ''} | 
             ${data.linkedin ? `<a href="${data.linkedin}" target="_blank">LinkedIn</a>` : ''}<br>
-            ${data.address}
+            ${data.location ? data.location : ''}
         </div>
     </div>
 
@@ -238,7 +238,7 @@ function generateStandaloneCVPage() {
                 <p>${project.description}</p>
                 <p><strong>Technologies:</strong> ${project.technologies.join(', ')}</p>
                 <div class="project-links">
-                    ${project.repository ? `<a href="${project.repository}" target="_blank">View Code</a>` : ''}
+                    ${project.repository ? `<a href="${project.repository}" target="_blank">View Code</a><br><span style="font-size:0.8em; color:#555; word-break:break-all;">${project.repository}</span>` : ''}
                     ${project.live_url ? `<a href="${project.live_url}" target="_blank">Live Demo</a>` : ''}
                 </div>
             </div>
@@ -249,41 +249,59 @@ function generateStandaloneCVPage() {
     <div class="section">
         <div class="section-title">Technical Skills</div>
         <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Programming & Web Development</h4>
-                <p>Frontend: ${data.technical_skills.programming.frontend.join(', ')}</p>
-                <p>Backend: ${data.technical_skills.programming.backend.join(', ')}</p>
-                <p>Databases: ${data.technical_skills.programming.databases.join(', ')}</p>
-            </div>
-            <div class="skill-category">
-                <h4>Infrastructure & Cloud</h4>
-                <p>Cloud: ${data.technical_skills.infrastructure.cloud.join(', ')}</p>
-                <p>Systems: ${data.technical_skills.infrastructure.operating_systems.join(', ')}</p>
-                <p>Networking: ${data.technical_skills.infrastructure.networking.join(', ')}</p>
-            </div>
-            <div class="skill-category">
-                <h4>CMS & Tools</h4>
-                <p>CMS: ${data.technical_skills.web_technologies.cms.join(', ')}</p>
-                <p>Tools: ${data.technical_skills.web_technologies.tools.join(', ')}</p>
-                <p>SEO: ${data.technical_skills.web_technologies.seo.join(', ')}</p>
-            </div>
+            ${data.technical_skills.web_development?.tools ? `<div class="skill-category"><h4>Web Development</h4><p>Tools: ${data.technical_skills.web_development.tools.join(', ')}</p></div>` : ''}
+            ${data.technical_skills.databases?.tools ? `<div class="skill-category"><h4>Databases</h4><p>Tools: ${data.technical_skills.databases.tools.join(', ')}</p></div>` : ''}
+            ${data.technical_skills.version_control_automation?.tools ? `<div class="skill-category"><h4>Version Control & Automation</h4><p>Tools: ${data.technical_skills.version_control_automation.tools.join(', ')}</p></div>` : ''}
+            ${data.technical_skills.infrastructure_networking?.tools ? `<div class="skill-category"><h4>Infrastructure & Networking</h4><p>Tools: ${data.technical_skills.infrastructure_networking.tools.join(', ')}</p></div>` : ''}
+            ${data.technical_skills["API integration"]?.tools ? `<div class="skill-category"><h4>API Integration</h4><p>Tools: ${data.technical_skills["API integration"].tools.join(', ')}</p></div>` : ''}
         </div>
     </div>
 
     <!-- Education & Certifications -->
     <div class="section">
         <div class="section-title">Education & Certifications</div>
-        ${data.education.map(edu => `
-            <div class="education-item">
-                <div class="cert-name">${edu.school} (${edu.period})</div>
-                <div>${edu.degree} ${edu.status ? `(${edu.status})` : ''}</div>
-            </div>
-        `).join('')}
         ${data.certifications.map(cert => `
             <div class="cert-item">
-                <span class="cert-name">${cert.name}</span> (${cert.year}) - ${cert.issuer}
+                <span class="cert-name">${cert.name}</span> (${cert.year})${cert.issuer ? ` - ${cert.issuer}` : ''}
             </div>
         `).join('')}
+        ${(() => {
+            // Custom order: Cisco CCNA first, Command Secondary School last, Durban University second-last
+            const edu = [...data.education];
+            const ciscoIdx = edu.findIndex(e => e.school === 'Cisco CCNA');
+            const commandIdx = edu.findIndex(e => e.school === 'Command Secondary School');
+            const durbanIdx = edu.findIndex(e => e.school === 'Durban University of Technology');
+            let rest = edu.filter(e => e.school !== 'Cisco CCNA' && e.school !== 'Command Secondary School' && e.school !== 'Durban University of Technology');
+            // Sort rest by year descending
+            rest = rest.sort((a, b) => {
+                const yearA = Math.max(...(a.period.match(/\d{4}/g) || [0]));
+                const yearB = Math.max(...(b.period.match(/\d{4}/g) || [0]));
+                return yearB - yearA;
+            });
+            const ordered = [];
+            if (ciscoIdx !== -1) ordered.push(edu[ciscoIdx]);
+            ordered.push(...rest);
+            if (durbanIdx !== -1) ordered.push(edu[durbanIdx]);
+            if (commandIdx !== -1) ordered.push(edu[commandIdx]);
+            return ordered.map(edu => `
+                <div class="education-item">
+                    <div class="cert-name">${edu.school} (${edu.period})</div>
+                    <div>${edu.degree} ${edu.status ? `(${edu.status})` : ''}</div>
+                </div>
+            `).join('');
+        })()}
+    </div>
+
+    <!-- References -->
+    <div class="section">
+        <div class="section-title">References</div>
+        ${data.references && data.references.length ? data.references.map(ref => `
+            <div class="reference-item">
+                <strong>${ref.name}</strong> – ${ref.title}<br>
+                ${ref.phone ? `Phone: ${ref.phone}` : ''}
+                ${ref.email ? `<br>Email: ${ref.email}` : ''}
+            </div>
+        `).join('') : '<div>No references available.</div>'}
     </div>
     
     <div class="footer">
@@ -296,6 +314,32 @@ function generateStandaloneCVPage() {
     // Write standalone CV page
     fs.writeFileSync(path.join(docsDir, 'index.html'), standaloneCVHTML);
     console.log('✅ Standalone CV website generated at docs/index.html');
+
+    // Also write HTML to generated/cv-latest.html
+    const generatedDir = path.join(process.cwd(), 'generated');
+    if (!fs.existsSync(generatedDir)) {
+        fs.mkdirSync(generatedDir, { recursive: true });
+        console.log('✅ Created generated directory');
+    }
+    fs.writeFileSync(path.join(generatedDir, 'cv-latest.html'), standaloneCVHTML);
+    console.log('✅ CV HTML also written to generated/cv-latest.html');
+
+    // Generate PDF from HTML and save to generated/cv-latest.pdf
+    // Use html-pdf or puppeteer for PDF generation
+    import('puppeteer').then(puppeteer => {
+        (async () => {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+            await page.setContent(standaloneCVHTML, { waitUntil: 'networkidle0' });
+            await page.pdf({ path: path.join(generatedDir, 'cv-latest.pdf'), format: 'A4' });
+            await browser.close();
+            console.log('✅ PDF generated at generated/cv-latest.pdf');
+            // Log data for PDF generation
+            console.log('🔍 Data used for PDF generation:', JSON.stringify(data, null, 2));
+        })();
+    });
+    // Log data for HTML generation
+    console.log('🔍 Data used for HTML generation:', JSON.stringify(data, null, 2));
 }
 
 generateStandaloneCVPage();
